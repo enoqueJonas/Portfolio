@@ -32,6 +32,6 @@ Show your support
 Give a ⭐️ if you like this project!
 
 # 📝 License
-This project is MIT licensed.
+[This project is MIT licensed](https://github.com/enoqueJonas/Portfolio/blob/main/LICENSE.md).
 
 
