@@ -1,29 +1,32 @@
 html { box-sizing: border-box; }
 
 #header-background {
-    width: 375px;
-    height: 718px;
-    /* background-color: goldenrod; */
-    left: 0px;
-    top: 0px;
+  width: 375px;
+  height: 718px;
+
+  /* background-color: goldenrod; */
+  left: 0;
+  top: 0;
 }
 
 #flex-nav {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    width: 375px;
-    height: 48px;
-    /* background-color: goldenrod; */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 375px;
+  height: 48px;
+
+  /* background-color: goldenrod; */
 }
 
-#flex-nav ul { 
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    /* width: 375px;
+#flex-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+
+  /* width: 375px;
     height: 48px;
     position: absolute;
     margin-left: -30px; */
@@ -41,108 +44,104 @@ html { box-sizing: border-box; }
     left: 311px;
     top: 4px;
     border-radius: 8px;
-    /* background-color: aqua; 
+    /* background-color: aqua;
 } */
 
 #burguer-menu-icon {
-    width: 24px;
-    height: 24px;
-    top: 8px;
-    left: 8px;
-    /* flex: 1; */
-    background-color: white;
-    position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 8px;
+  left: 8px;
+
+  /* flex: 1; */
+  background-color: white;
+  position: absolute;
 }
 
-#logo { 
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 20px;
+#logo {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
 }
 
-#logo a{ 
-    color: #6070FF;
-    text-decoration: none;
+#logo a {
+  color: #6070ff;
+  text-decoration: none;
 }
 
 #primary-text {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    width: 327px;
-    height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 327px;
+  height: 150px;
 }
 
 #primary-text-header {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 52px;
-    color: #172B4D;
-    margin: 170px 0px 0px 30px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+  margin: 170px 0 0 30px;
 }
 
-#hello-text { 
-    text-align: justify;
-    margin: 0px 30px 0px 30px; 
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+#hello-text {
+  text-align: justify;
+  margin: 0 30px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 #connect {
-    width: 200px;
-    height: 24px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #7F8CFF;
-    margin: 15px 30px 0px 30px;
+  width: 200px;
+  height: 24px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  margin: 15px 30px 0;
 }
 
 #social {
-    display: flex;
-    width: 170.17px;
-    height: 20px;
-    justify-content: space-between;
-    margin-left: 30px;
-    margin-top: 10px;
+  display: flex;
+  width: 170.17px;
+  height: 20px;
+  justify-content: space-between;
+  margin-left: 30px;
+  margin-top: 10px;
 }
 
 #rectangle-6 {
-    position: absolute;
-    width: 51.99px;
-    height: 9.3px;
-    left: -34px;
-    top: 141.49px;
-    background: #EBEBFF;
-    transform: rotate(-46.14deg);
+  position: absolute;
+  width: 51.99px;
+  height: 9.3px;
+  left: -34px;
+  top: 141.49px;
+  background: #ebebff;
+  transform: rotate(-46.14deg);
 }
 
 #ellipse-3 {
-    position: absolute;
-    width: 105px;
-    height: 105px;
-    left: 323px;
-    top: 152.24px;
-    background: #6070FF;
-    border-radius: 80px;
+  position: absolute;
+  width: 105px;
+  height: 105px;
+  left: 323px;
+  top: 152.24px;
+  background: #6070ff;
+  border-radius: 80px;
 }
 
 #rectangle-4 {
-    position: absolute;
-    width: 95.58px;
-    height: 22.02px;
-    left: 294px;
-    top: 165.79px;
-    background: #EBEBFF;
-    transform: rotate(-30deg);
+  position: absolute;
+  width: 95.58px;
+  height: 22.02px;
+  left: 294px;
+  top: 165.79px;
+  background: #ebebff;
+  transform: rotate(-30deg);
 }
-
