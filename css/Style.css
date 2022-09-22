@@ -1,1 +1,71 @@
-li { color: blue; }
+html { box-sizing: border-box; }
+
+#header-background {
+    width: 375px;
+    height: 718px;
+    /* background-color: goldenrod; */
+    left: 0px;
+    top: 0px;
+}
+
+#flex-nav {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 375px;
+    height: 48px;
+    /* background-color: goldenrod; */
+}
+
+#flex-nav ul { 
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    /* width: 375px;
+    height: 48px;
+    position: absolute;
+    margin-left: -30px; */
+}
+
+/* #burguer-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 8px;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 24px;
+    left: 311px;
+    top: 4px;
+    border-radius: 8px;
+    /* background-color: aqua; 
+} */
+
+#burguer-menu-icon {
+    width: 24px;
+    height: 24px;
+    top: 8px;
+    left: 8px;
+    /* flex: 1; */
+    background-color: white;
+    position: absolute;
+}
+
+#logo { 
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+#logo a{ 
+    color: #6070FF;
+    text-decoration: none;
+}
+
+
+
