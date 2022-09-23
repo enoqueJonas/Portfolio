@@ -429,7 +429,7 @@ html { box-sizing: border-box; }
   width: 124px;
   height: 48px;
   left: 0;
-  top: calc(50% - 48px/2);
+  top: calc(50% - 48px / 2);
   border: 1px solid #6070ff;
   border-radius: 8px;
 }
@@ -453,7 +453,7 @@ html { box-sizing: border-box; }
   gap: 24px;
   width: 375px;
   height: 1125.15px;
-  left: calc(50% - 375px/2);
+  left: calc(50% - 375px / 2);
   top: 3506px;
   order: 2;
 }
@@ -594,7 +594,7 @@ html { box-sizing: border-box; }
   height: 24px;
   left: 12px;
   right: 78px;
-  top: calc(50% - 24px/2);
+  top: calc(50% - 24px / 2);
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -607,7 +607,7 @@ html { box-sizing: border-box; }
   height: 24px;
   left: 12px;
   right: 78px;
-  top: calc(50% - 24px/2);
+  top: calc(50% - 24px / 2);
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -625,7 +625,7 @@ html { box-sizing: border-box; }
   width: 40px;
   height: 40px;
   right: 26px;
-  top: calc(50% - 40px/2);
+  top: calc(50% - 40px / 2);
   border-radius: 8px;
 }
 
@@ -662,7 +662,7 @@ html { box-sizing: border-box; }
 .icon-language-javascript {
   background-image: url("../img/javascript.jpg");
   background-repeat: no-repeat;
-  top: calc(50% - 48px/2 - 0.36px);
+  top: calc(50% - 48px / 2 - 0.36px);
   border-radius: 8px;
   flex: 0.3;
 }
@@ -671,7 +671,7 @@ html { box-sizing: border-box; }
   background-image: url("../img/html.jpg");
   background-repeat: no-repeat;
   left: 12px;
-  top: calc(50% - 48px/2 - 0.36px);
+  top: calc(50% - 48px / 2 - 0.36px);
   border-radius: 8px;
   flex: 0.3;
 }
@@ -682,7 +682,7 @@ html { box-sizing: border-box; }
   width: 48px;
   height: 48px;
   left: 12px;
-  top: calc(50% - 48px/2 - 0.36px);
+  top: calc(50% - 48px / 2 - 0.36px);
   border-radius: 8px;
   flex: 0.3;
 }
@@ -714,7 +714,7 @@ html { box-sizing: border-box; }
   width: 40px;
   height: 40px;
   right: 26px;
-  top: calc(50% - 40px/2);
+  top: calc(50% - 40px / 2);
   border-radius: 8px;
 }
 
@@ -743,6 +743,6 @@ html { box-sizing: border-box; }
   width: 40px;
   height: 40px;
   right: 26px;
-  top: calc(50% - 40px/2);
+  top: calc(50% - 40px / 2);
   border-radius: 8px;
 }
