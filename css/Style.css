@@ -1,5 +1,10 @@
 html { box-sizing: border-box; }
 
+.site-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
 #header-background {
   display: flex;
   width: 375px;
@@ -110,4 +115,317 @@ html { box-sizing: border-box; }
 
 #social li {
   flex: 1;
+}
+
+.works {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 114px 24px;
+    gap: 88px;
+    width: 375px;
+    height: 2788px;
+    left: 0px;
+    top: 718px;
+}
+
+.works-item {
+    /* This is the container for the image and the descrption of the project cards*/
+    width: 327px;
+    height: 552px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    gap: 12px;
+    width: 327px;
+    height: 552px;
+    background: #FFFFFF;
+    border: 1px solid #DFE1E6;
+    border-radius: 16px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.works-item-image-1 {
+    width: 295px;
+    height: 220px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    background-image: url("../img/Snapshoot\ Portfolio.jpg");
+    background-repeat: no-repeat;
+}
+
+.works-item-image-2 {
+    width: 295px;
+    height: 220px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    background-image: url("../img/Snapshoot\ Portfolio-2.jpg");
+    background-repeat: no-repeat;
+}
+
+.works-item-image-3 {
+    width: 295px;
+    height: 220px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    background-image: url("../img/Snapshoot\ Portfolio-3.jpg");
+    background-repeat: no-repeat;
+}
+
+.works-item-image-4 {
+    width: 295px;
+    height: 220px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    background-image: url("../img/Snapshoot\ Portfolio-4.jpg");
+    background-repeat: no-repeat;
+}
+
+.works-item-title { 
+    margin-bottom: 0px;
+    width: 295px;
+    height: 36px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: #172B4D;
+    order: 0;
+}
+
+.works-item-project-description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    width: 295px;
+    height: 76px;
+    color: #344563;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin-bottom: 0px;
+}
+
+.works-item-project-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+    width: 295px;
+    height: 80px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    padding: 0px;
+    gap: 12px;
+}
+
+.works-item-info-block {
+    width: 295px;
+    height: 288px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.works-item-project-info-frame {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    padding: 0px;
+    width: 236px;
+    height: 32px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.works-item-project-info-canopy {
+    width: 55px;
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 0px;
+}
+
+.works-item-project-info-canopy span {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: #344563;
+    order: 1;
+}
+
+.works-item-project-info-type {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 0px;
+    width: 88px;
+    height: 32px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.works-item-project-info-type span {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: #7A869A;
+    flex: 1;
+    order: 3;
+}
+
+.works-item-project-info-year {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 0px;
+    width: 29px;
+    height: 32px;
+    flex: none;
+    order: 4;
+    flex-grow: 0;
+}
+
+.works-item-project-info-year span {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: #7A869A;
+    order: 5;
+}
+
+.works-item-project-info-items { margin: 0px; }
+
+.works-item-project-info-point-1 {
+    width: 8px;
+    height: 8px;
+    order: 2;
+}
+
+.works-item-project-info-point-2 {
+    width: 8px;
+    height: 8px;
+    order: 4;
+}
+
+.works-item-project-tecnologies {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    width: 203px;
+    height: 24px;
+    order: 2;
+}
+
+.works-item-project-tecnologies-item {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #6070FF;
+}
+
+.works-item-project-item-html{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 53px;
+    height: 24px;
+    padding: 4px 12px;
+    background: #EBEBFF;
+    border-radius: 8px;
+    order: 0;
+}
+
+.works-item-project-item-css {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 12px;
+    width: 45px;
+    height: 24px;
+    background: #EBEBFF;
+    border-radius: 8px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.works-item-project-item-javaScript {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 89px;
+    height: 30px;
+    background: #EBEBFF;
+    border-radius: 8px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+#works-item-project-action {
+    width: 295px;
+    height: 72px;
+    flex: none;
+    order: 4;
+    flex-grow: 0;
+}
+
+.works-item-project-action-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px;
+    gap: 10px;
+    width: 124px;
+    height: 48px;
+    left: 0px;
+    top: calc(50% - 48px/2);
+    border: 1px solid #6070FF;
+    border-radius: 8px;
+}
+
+.works-item-project-action-button span { 
+    width: 100px;
+    height: 24px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #396DF2;
 }
