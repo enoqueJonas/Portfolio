@@ -146,7 +146,7 @@ body {
   flex: 1;
 }
 
-.works {
+#works {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
