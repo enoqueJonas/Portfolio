@@ -1,5 +1,10 @@
 html { box-sizing: border-box; }
 
+body {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+}
+
 .site-wrapper {
   display: flex;
   flex-direction: column;
@@ -82,6 +87,17 @@ html { box-sizing: border-box; }
   line-height: 20px;
 }
 
+.supporting-text a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
 #logo a {
   color: #6070ff;
   text-decoration: none;
@@ -142,9 +158,9 @@ html { box-sizing: border-box; }
 }
 
 .works {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   padding: 114px 24px;
   gap: 88px;
   width: 375px;
@@ -152,6 +168,7 @@ html { box-sizing: border-box; }
   left: 0;
   top: 718px;
   order: 2;
+  row-gap: 50px;
 }
 
 .works-item {
@@ -516,17 +533,6 @@ html { box-sizing: border-box; }
   height: 24px;
 }
 
-.supporting-text span {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  color: #7f8cff;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
 #btn-get-resume {
   display: flex;
   flex-direction: row;
@@ -555,6 +561,19 @@ html { box-sizing: border-box; }
   color: #396df2;
   flex: none;
   order: 0;
+  flex-grow: 0;
+}
+
+.language-and-skills-frame {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  width: 327px;
+  height: 464.15px;
+  flex: none;
+  order: 1;
   flex-grow: 0;
 }
 
