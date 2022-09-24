@@ -87,17 +87,6 @@ body {
   line-height: 20px;
 }
 
-.supporting-text a {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  color: #7f8cff;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
 #logo a {
   color: #6070ff;
   text-decoration: none;
@@ -479,11 +468,15 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding: 0;
+  gap: 12px;
+  width: 327px;
+  height: 409px;
 }
 
 .about-title {
   width: 327px;
-  height: 101px;
+  height: 60px;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -494,6 +487,7 @@ body {
   flex: none;
   order: 0;
   flex-grow: 0;
+  margin: 0;
 }
 
 .about-text {
@@ -508,6 +502,7 @@ body {
   order: 1;
   flex-grow: 0;
   text-align: justify;
+  margin: 0;
 }
 
 .about-social-media {
@@ -529,14 +524,38 @@ body {
   align-items: center;
   padding: 0;
   gap: 8px;
-  width: 117px;
+  width: 150px;
   height: 24px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.btn-get-resume-frame {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  width: 162px;
+  height: 48px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
 }
 
 #btn-get-resume {
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding: 12px;
   gap: 10px;
   width: 162px;
   height: 48px;
