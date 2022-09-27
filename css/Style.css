@@ -150,7 +150,6 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  padding: 114px 24px;
   gap: 88px;
   width: 375px;
   height: 2788px;
@@ -789,7 +788,7 @@ body {
   display: flex;
   flex-direction: column;
   order: 3;
-  width: 320px;
+  width: 375px;
   height: 779px;
   background-image: url("../img/Contact\ me.png");
   background-repeat: no-repeat;
@@ -800,7 +799,7 @@ body {
 #contact form {
   display: flex;
   flex-direction: column;
-  width: 280px;
+  width: 327px;
 }
 
 #contact .contact-title {
@@ -823,7 +822,7 @@ body {
 
 #contact p {
   height: 102px;
-  width: 315px;
+  width: 327px;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
@@ -838,6 +837,7 @@ body {
   border-radius: 8px;
   height: 35px;
   margin-bottom: 20px;
+  width: 327px;
 }
 
 #contact form textarea {
@@ -845,6 +845,7 @@ body {
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   height: 110px;
+  width: 327px;
 }
 
 #contact form button {
@@ -857,9 +858,6 @@ body {
   border: none;
   margin-top: 20px;
   background: #fff;
-}
-
-#contact form button span {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
@@ -869,3 +867,4 @@ body {
   letter-spacing: 0.03em;
   color: #6070ff;
 }
+
