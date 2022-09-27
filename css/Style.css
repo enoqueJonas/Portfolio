@@ -455,10 +455,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 114px 0;
+  padding: 100px 0;
   gap: 24px;
   width: 375px;
-  height: 1125.15px;
+  height: 920px;
   left: calc(50% - 375px / 2);
   top: 3506px;
   order: 2;
@@ -602,7 +602,7 @@ body {
   align-items: center;
   padding: 0;
   width: 327px;
-  height: 464.15px;
+  height: 320px;
   flex: none;
   order: 1;
   flex-grow: 0;
@@ -614,7 +614,7 @@ body {
   align-items: center;
   padding: 0;
   width: 327px;
-  height: 464.15px;
+  height: 310px;
   flex: none;
   order: 1;
   flex-grow: 0;
@@ -783,4 +783,89 @@ body {
   right: 26px;
   top: calc(50% - 40px / 2);
   border-radius: 8px;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  order: 3;
+  width: 320px;
+  height: 779px;
+  background-image: url("../img/Contact\ me.png");
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+}
+
+#contact .contact-title {
+  height: 56px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  margin: 0;
+
+  /* or 130% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* Neutrals/N0 */
+
+  color: #fff;
+}
+
+#contact p {
+  height: 102px;
+  width: 315px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 60px;
+  text-align: center;
+  color: #ebebff;
+}
+
+#contact form input {
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  height: 35px;
+  margin-bottom: 20px;
+}
+
+#contact form textarea {
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  height: 110px;
+}
+
+#contact form button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 140px;
+  height: 48px;
+  border-radius: 8px;
+  border: none;
+  margin-top: 20px;
+  background: #fff;
+}
+
+#contact form button span {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #6070ff;
 }
