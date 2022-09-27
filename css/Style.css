@@ -849,9 +849,7 @@ body {
 }
 
 #contact form button {
-  display: flex;
   justify-content: flex-start;
-  align-items: center;
   width: 140px;
   height: 48px;
   border-radius: 8px;
@@ -867,4 +865,3 @@ body {
   letter-spacing: 0.03em;
   color: #6070ff;
 }
-
