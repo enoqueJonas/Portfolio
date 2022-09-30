@@ -464,7 +464,7 @@ body {
 }
 
 /* .works-item-project-action-button span {
-  
+
 } */
 
 #about {
@@ -568,9 +568,7 @@ body {
 }
 
 #btn-get-resume {
-  display: flex;
   flex-direction: row;
-  align-items: center;
   padding: 12px;
   gap: 10px;
   width: 162px;
@@ -589,7 +587,6 @@ body {
   order: 3;
   flex-grow: 0;
 }
-
 
 .language-and-skills-frame {
   list-style: none;
@@ -864,10 +861,12 @@ body {
   color: #6070ff;
 }
 
-button:hover, .btn-get-in-touch:hover, #btn-get-resume:hover {
-  color: #FFFFFF;
-  background: #6070FF;
-  box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+button:hover,
+.btn-get-in-touch:hover,
+#btn-get-resume:hover {
+  color: #fff;
+  background: #6070ff;
+  box-shadow: 0 8px 16px rgb(64 83 252 / 24%);
 }
 
 /* button :hover {
