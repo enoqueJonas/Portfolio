@@ -105,6 +105,7 @@ body {
   width: 544px;
   height: 448px;
   flex: 1 1;
+  margin: 0 40px;
 }
 
 .works-item-info-block {
@@ -165,7 +166,7 @@ body {
 }
 
 #about {
-  justify-content: ce`nter;
+  justify-content: center;
   height: 724px;
   left: 1440px;
   background: #fff;
@@ -231,6 +232,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   width: 684px;
+  border-bottom: 1px solid #dfe1e6;
 }
 
 .habs {
@@ -245,6 +247,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   width: 684px;
+  border-bottom: 1px solid #dfe1e6;
 }
 
 .language-list {
@@ -331,4 +334,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.btn-get-in-touch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

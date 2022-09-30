@@ -855,7 +855,7 @@ body {
   width: 327px;
 }
 
-#contact form button {
+.btn-get-in-touch {
   justify-content: flex-start;
   width: 140px;
   height: 48px;
