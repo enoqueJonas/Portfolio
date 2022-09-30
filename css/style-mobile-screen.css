@@ -455,11 +455,6 @@ body {
   top: calc(50% - 48px / 2);
   border: 1px solid #6070ff;
   border-radius: 8px;
-}
-
-.works-item-project-action-button span {
-  width: 100px;
-  height: 24px;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -467,6 +462,10 @@ body {
   letter-spacing: 0.03em;
   color: #396df2;
 }
+
+/* .works-item-project-action-button span {
+
+} */
 
 #about {
   display: flex;
@@ -569,24 +568,13 @@ body {
 }
 
 #btn-get-resume {
-  display: flex;
   flex-direction: row;
-  align-items: center;
   padding: 12px;
   gap: 10px;
   width: 162px;
   height: 48px;
   border: 1px solid #6070ff;
   border-radius: 8px;
-  flex: none;
-  order: 3;
-  flex-grow: 0;
-}
-
-#btn-get-resume span {
-  width: 138px;
-  height: 24px;
-  font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
@@ -596,7 +584,7 @@ body {
   letter-spacing: 0.03em;
   color: #396df2;
   flex: none;
-  order: 0;
+  order: 3;
   flex-grow: 0;
 }
 
@@ -872,3 +860,17 @@ body {
   letter-spacing: 0.03em;
   color: #6070ff;
 }
+
+button:hover,
+.btn-get-in-touch:hover,
+#btn-get-resume:hover {
+  color: #fff;
+  background: #6070ff;
+  box-shadow: 0 8px 16px rgb(64 83 252 / 24%);
+}
+
+/* button :hover {
+  color: #FFFFFF;
+  background: #6070FF;
+  box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+} */
