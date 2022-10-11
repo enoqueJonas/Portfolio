@@ -44,10 +44,9 @@ a {
   bottom: 0;
 }
 
-/* .header.active {
-  background: transparent;
-  height: 24px;
-} */
+.header {
+  transition: all 0.6s linear;
+}
 
 .navbar {
   display: flex;
