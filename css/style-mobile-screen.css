@@ -23,6 +23,7 @@ a {
 
 #header-background {
   display: flex;
+  flex-direction: column;
   width: 100%;
   height: 718px;
   background-image: url("../img/header-shapes\ mobile.svg");
@@ -33,30 +34,21 @@ a {
   order: 0;
 }
 
-.header {
+.header.active {
   width: 375px;
   height: 40em;
-  border: 3px solid goldenrod;
-  background: rgb(96 112 255 / 90%);
+  background: rgb(96 112 255 / 97%);
   position: absolute;
-  left: 0;
+  left: 5px;
   right: 0;
   top: 0;
   bottom: 0;
 }
 
-.mobile-menu-background {
-  display: flex;
-  justify-content: center;
-  width: 375px;
-  height: 50em;
-  background: #6070ff;
-  position: absolute;
-  left: -40px;
-  right: 0;
-  top: -15px;
-  bottom: 0;
-}
+/* .header.active {
+  background: transparent;
+  height: 24px;
+} */
 
 .navbar {
   display: flex;
@@ -64,15 +56,56 @@ a {
   align-items: center;
 }
 
+.close-menu-toolbar {
+  display: none;
+}
+
+.close-menu-toolbar.active {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 20px;
+  bottom: 0px;
+  width: 100%;
+  height: 40px;
+}
+
+.close-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 24px;
+  top: 0px;
+  border-radius: 8px;
+}
+
 .nav-logo {
   padding: 0 1em;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #6070FF;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 .burger {
   padding: 0 1em;
+  z-index: 100;
 }
 
 .nav-menu {
+  display: none;
+}
+
+.nav-menu.active {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -113,7 +146,7 @@ a {
   flex-grow: 0;
 }
 
-.about-social-media-links > * {
+.about-social-media-links>* {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -129,10 +162,10 @@ a {
   display: flex;
   flex-direction: column;
   align-content: center;
-  justify-content: space-around;
+  justify-content: center;
   width: 327px;
   height: 150px;
-  margin: 120px 0 0 30px;
+  margin: 13em 0 0 30px;
 }
 
 .primary-text-header {
