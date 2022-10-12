@@ -44,11 +44,6 @@ a {
   bottom: 0;
 }
 
-/* .header.active {
-  background: transparent;
-  height: 24px;
-} */
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -174,8 +169,6 @@ a {
   font-size: 40px;
   line-height: 52px;
   color: #172b4d;
-
-  /* margin: 170px 0 0 30px; */
 }
 
 #hello-text {
@@ -530,10 +523,6 @@ a {
   transition: all 0.5s;
 }
 
-/* .works-item-project-action-button span {
-
-} */
-
 #about {
   display: flex;
   flex-direction: column;
@@ -871,15 +860,9 @@ a {
   font-size: 40px;
   line-height: 52px;
   margin: 0;
-
-  /* or 130% */
-
   display: flex;
   align-items: center;
   text-align: center;
-
-  /* Neutrals/N0 */
-
   color: #fff;
 }
 
@@ -937,9 +920,3 @@ button:hover,
   background: #6070ff;
   box-shadow: 0 8px 16px rgb(64 83 252 / 24%);
 }
-
-/* button :hover {
-  color: #FFFFFF;
-  background: #6070FF;
-  box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
-} */
