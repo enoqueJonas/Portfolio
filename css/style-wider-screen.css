@@ -130,18 +130,22 @@ body {
 
 .works-item-image-1 {
   background: url("../img/Snapshoot\ Portfolio\ wide\ screen.png");
+  background-repeat: no-repeat;
 }
 
 .works-item-image-2 {
   background: url("../img/Snapshoot\ Portfolio\ wide\ screen\ 2.png");
+  background-repeat: no-repeat;
 }
 
 .works-item-image-3 {
   background: url("../img/Snapshoot\ Portfolio\ wide\ screen\ 3.png");
+  background-repeat: no-repeat;
 }
 
 .works-item-image-4 {
   background: url("../img/Snapshoot\ Portfolio\ wide\ screen\ 4.png");
+  background-repeat: no-repeat;
 }
 
 .works-item-title {
