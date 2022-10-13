@@ -217,16 +217,18 @@ a {
 }
 
 #works {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  gap: 88px;
+  grid-template-rows: 1fr 1fr 1fr 1fr; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 112px;
   width: 100%;
   height: 2788px;
   left: 0;
-  top: 718px;
   order: 2;
-  row-gap: 20px;
   background-color: #e5e5e5;
   justify-items: center;
 }
@@ -236,7 +238,6 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5px;
   width: 327px;
   height: 552px;
   background: #fff;
@@ -245,10 +246,6 @@ a {
   flex: none;
   order: 0;
   flex-grow: 0;
-}
-
-.works-item-1 {
-  margin: 90px 0;
 }
 
 .works-item-image-1 {
@@ -446,6 +443,16 @@ a {
   order: 2;
 }
 
+.works-item-project-tecnologies-2 {
+  display: none;
+}
+
+.works-item-project-tecnologies-1 {
+  width: 19.5em;
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgb(0 0 0 / 20%);
+}
+
 .works-item-project-tecnologies-item {
   font-style: normal;
   font-weight: 500;
@@ -521,6 +528,169 @@ a {
   letter-spacing: 0.03em;
   color: #396df2;
   transition: all 0.5s;
+}
+
+.projects-popup {
+  display: none;
+}
+
+.projects-popup.active-popup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 21em;
+  height: 44em;
+  position: absolute;
+  top: 20px;
+  background: #fff;
+  border: 1px solid #ebecf0;
+  box-shadow: 0 48px 48px rgb(37 47 137 / 8%);
+  border-radius: 16px;
+}
+
+.popup-project-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 19.5em;
+  height: 84px;
+}
+
+.popup-prject-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 40px;
+}
+
+.popup-prject-title p {
+  font-weight: 700;
+  font-size: 40px;
+  margin: 0;
+  line-height: 52px;
+  color: #091e42;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.popup-prject-title img {
+  flex: none;
+}
+
+.popup-project-info-frame {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 12px;
+  width: 236px;
+  height: 36px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.popup-project-img {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 311px;
+  height: 220px;
+  border-radius: 8px;
+  background: url("../img/Snapshoot\ Portfolio-2.jpg");
+  background-repeat: no-repeat;
+}
+
+.projects-popup-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 19.5em;
+  height: 353px;
+  gap: 5px;
+}
+
+.project-popuop-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  gap: 12px;
+  width: 19.5em;
+  height: 220px;
+  margin: 0;
+}
+
+.project-popuop-description p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+  flex: none;
+  order: 0;
+  text-align: justify;
+}
+
+.project-popup-tecnologies {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-popup-action {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 320px;
+  height: 56px;
+  order: 2;
+  margin: 10px 0;
+}
+
+.btn-see-source {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  width: 142px;
+  height: 40px;
+  left: 5px;
+  bottom: 16px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+}
+
+.btn-see-source span {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.btn-see-live {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  width: 130px;
+  height: 40px;
+  left: 5px;
+  bottom: 16px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  margin: 0 15px;
+}
+
+.btn-see-live span {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 #about {

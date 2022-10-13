@@ -130,7 +130,7 @@ body {
 
 .works-item-image-1 {
   background: url("../img/Snapshoot\ Portfolio\ wide\ screen.png");
-  background-repeat: no-repeat
+  background-repeat: no-repeat;
 }
 
 .works-item-image-2 {
@@ -175,17 +175,20 @@ body {
 }
 
 .projects-popup {
+  display: none;
+}
+
+.projects-popup.active {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 3px solid goldenrod;
   width: 70em;
   height: 62em;
   position: absolute;
-  top: 20px;
-  background: #FFFFFF;
-  border: 1px solid #EBECF0;
-  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+  top: 110%;
+  background: #fff;
+  border: 1px solid #ebecf0;
+  box-shadow: 0 48px 48px rgb(37 47 137 / 8%);
   border-radius: 16px;
 }
 
@@ -209,7 +212,7 @@ body {
   font-size: 40px;
   margin: 0;
   line-height: 52px;
-  color: #091E42;
+  color: #091e42;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -223,7 +226,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   gap: 12px;
   width: 260px;
   height: 36px;
@@ -236,7 +239,7 @@ body {
   width: 68em;
   height: 37em;
   border-radius: 8px;
-  background: url('../img/Snapshoot\ Portfolio\ wider.png');
+  background: url("../img/Snapshoot\ Portfolio\ wider.png");
 }
 
 .projects-popup-details {
@@ -250,7 +253,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   gap: 12px;
   width: 48em;
 }
@@ -266,19 +269,20 @@ body {
   text-align: justify;
 }
 
-.project-popup-tecnologies{
+.project-popup-tecnologies {
   display: flex;
   flex-direction: column;
+  margin: 10px 0;
 }
 
-.works-item-project-tecnologies-1{
+.works-item-project-tecnologies-1 {
   order: 0;
 }
 
 .works-item-project-tecnologies-2 {
   width: 15em;
   padding-bottom: 15px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgb(0 0 0 / 20%);
   order: 1;
 }
 
@@ -297,7 +301,7 @@ body {
   height: 40px;
   left: 5px;
   bottom: 16px;
-  border: 1px solid #6070FF;
+  border: 1px solid #6070ff;
   border-radius: 8px;
 }
 
@@ -319,7 +323,7 @@ body {
   height: 40px;
   left: 5px;
   bottom: 16px;
-  border: 1px solid #6070FF;
+  border: 1px solid #6070ff;
   border-radius: 8px;
   margin: 0 15px;
 }
@@ -335,12 +339,13 @@ body {
 
 #about {
   justify-content: center;
-  height: 724px;
+  height: 40em;
   left: 1440px;
   background: #fff;
   width: 100%;
   display: flex;
   flex-direction: row;
+  padding: 0;
 }
 
 #top {
