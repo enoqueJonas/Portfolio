@@ -130,7 +130,6 @@ body {
 
 .works-item-image-1 {
   background: url("../img/Snapshoot\ Portfolio\ wide\ screen.png");
-  background-repeat: no-repeat;
 }
 
 .works-item-image-2 {
@@ -178,18 +177,23 @@ body {
   display: none;
 }
 
-.projects-popup.active {
+.projects-popup.active-popup {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 70em;
   height: 62em;
-  position: absolute;
-  top: 110%;
+  min-height: 70em;
+  max-height: 70em;
+  position: fixed;
+  top: 1em;
+  left: 9.5em;
   background: #fff;
   border: 1px solid #ebecf0;
   box-shadow: 0 48px 48px rgb(37 47 137 / 8%);
   border-radius: 16px;
+  overflow-y: scroll;
+  z-index: 100;
 }
 
 .popup-project-header {

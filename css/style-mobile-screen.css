@@ -451,6 +451,7 @@ a {
   width: 19.5em;
   padding-bottom: 25px;
   border-bottom: 1px solid rgb(0 0 0 / 20%);
+  order: 1;
 }
 
 .works-item-project-tecnologies-item {
@@ -541,12 +542,15 @@ a {
   justify-content: center;
   width: 21em;
   height: 44em;
-  position: absolute;
-  top: 20px;
+  position: fixed;
+  top: 0;
+  left: 1.1em;
   background: #fff;
   border: 1px solid #ebecf0;
   box-shadow: 0 48px 48px rgb(37 47 137 / 8%);
   border-radius: 16px;
+  z-index: 1;
+  overflow: auto;
 }
 
 .popup-project-header {
@@ -646,6 +650,7 @@ a {
   height: 56px;
   order: 2;
   margin: 10px 0;
+  order: 2;
 }
 
 .btn-see-source {
