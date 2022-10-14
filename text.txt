@@ -1,3 +1,4 @@
+
 const header = document.querySelector('.header');
 const closeMenuToolbar = document.querySelector('.close-menu-toolbar');
 const navMenu = document.querySelector('.nav-menu');
@@ -9,8 +10,8 @@ const navItemContact = document.querySelector('#nav-item-contact');
 const popupD = document.querySelector('.popup');
 let buttonPressed = '';
 const contactForm = document.querySelector('.contact-form');
-const emailInput = document.querySelector('#email');
-const error = document.querySelector('.error');
+const emailInput = document.querySelector('#email')
+const error = document.querySelector('.error')
 
 // Section that holds all of the project cards
 const projectCardsSection = document.querySelector('#works');
@@ -238,7 +239,7 @@ function displayProjectCardsPopup() {
 
       // Creating the <div> that holds the img
       const projectPopupImg = document.createElement('div');
-      projectPopupImg.className = `popup-project-img ${project.img}`;
+      projectPopupImg.className = `popup-project-img ${project.img}` ;
 
       // Creating the main container that holdds the popup
       projectsPopupDiv.className = 'projects-popup';
@@ -394,18 +395,21 @@ function displayProjectCards() {
 
 emailInput.addEventListener('input', (event) => {
   event.preventDefault();
-});
+})
 
 contactForm.addEventListener('submit', (event) => {
-  // emailInput.pattern="/[a-z]/";
-  if (emailInput.value.toLowerCase() !== emailInput.value) {
-    error.textContent = 'Your email has to be lower case!';
-    error.classList.add('active');
+  emailInput.pattern = '/^(([^a-z<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-z\-0-9]+\.)+[a-z]{2,}))$/;'
+  console.log(emailInput.pattern+" Enter")
+  if(emailInput.validity.patternMismatch){
+    console.log('Enter')
+    error.textContent = 'Your email has to be lower case!'
+    error.classList.add('active')
     event.preventDefault();
-  } else {
-    error.classList.remove('active');
+    console.log('ENTER')
+  }else{
+    error.classList.remove('active')
   }
-});
+})
 window.addEventListener('load', displayProjectCards);
 navItemContact.addEventListener('click', toggleMobileMenu);
 navItemAbout.addEventListener('click', toggleMobileMenu);
