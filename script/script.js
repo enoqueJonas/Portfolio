@@ -6,8 +6,8 @@ const btnCloseMenu = document.querySelector('.close-menu');
 const navItemPortfolio = document.querySelector('#nav-item-portfolio');
 const navItemAbout = document.querySelector('#nav-item-about');
 const navItemContact = document.querySelector('#nav-item-contact');
-const buttons = document.querySelectorAll('button')
-const popupD = document.querySelector('.popup')
+const popupD = document.querySelector('.popup');
+let buttonPressed = '';
 
 // Section that holds all of the project cards
 const projectCardsSection = document.querySelector('#works');
@@ -15,7 +15,7 @@ const projectCardsSection = document.querySelector('#works');
 const projectCardsArray = [
   {
     name: 'Tonic',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     img: 'works-item-image-1',
     technologies: ['html', 'css', 'javaScript', 'github', 'ruby', 'Bootstrap'],
     linkToLive: '#',
@@ -23,11 +23,11 @@ const projectCardsArray = [
     canopy: 'Canopy',
     type: 'Back End Dev',
     year: '2011',
-    id: 'card-1'
+    id: 'card-1',
   },
   {
     name: 'Multi-Post Stories',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     img: 'works-item-image-2',
     technologies: ['html', 'css', 'javaScript', 'github', 'ruby', 'Bootstrap'],
     linkToLive: '#',
@@ -35,11 +35,11 @@ const projectCardsArray = [
     canopy: 'Canopy',
     type: 'Back End Dev',
     year: '2012',
-    id: 'card-2'
+    id: 'card-2',
   },
   {
     name: 'Tonic',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     img: 'works-item-image-3',
     technologies: ['html', 'css', 'javaScript', 'github', 'ruby', 'Bootstrap'],
     linkToLive: '#',
@@ -47,11 +47,11 @@ const projectCardsArray = [
     canopy: 'Canopy',
     type: 'Back End Dev',
     year: '2013',
-    id: 'card-3'
+    id: 'card-3',
   },
   {
     name: 'Multi-Post Stories',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     img: 'works-item-image-4',
     technologies: ['html', 'css', 'javaScript', 'github', 'ruby', 'Bootstrap'],
     linkToLive: '#',
@@ -59,21 +59,14 @@ const projectCardsArray = [
     canopy: 'Canopy',
     type: 'Back End Dev',
     year: '2022',
-    id: 'card-4'
+    id: 'card-4',
   },
 ];
-
-let buttonPressed = '';
-const getButtonPressed = e => {
-  buttonPressed = e.target.id
-  displayProjectCardsPopup();
-}
 
 function displayProjectCardsPopup() {
   const projectsPopupDiv = document.createElement('div');
   projectCardsArray.forEach((project) => {
     if (buttonPressed === project.id) {
-      console.log('Enter if')
       const projectYearP = document.createElement('p');
       projectYearP.className = 'works-item-project-info-year';
       projectYearP.textContent = project.year;
@@ -250,12 +243,17 @@ function displayProjectCardsPopup() {
       projectsPopupDiv.appendChild(popupProjectHeaderDiv);
       projectsPopupDiv.appendChild(projectPopupImg);
       projectsPopupDiv.appendChild(projectPopupDetails);
-      
+
       projectCardsSection.appendChild(projectsPopupDiv);
       popupD.classList.toggle('active-popup');
     }
   });
 }
+
+const getButtonPressed = (e) => {
+  buttonPressed = e.target.id;
+  displayProjectCardsPopup();
+};
 
 function toggleMobileMenu() {
   header.classList.toggle('active');
@@ -298,8 +296,8 @@ function displayProjectCards() {
     projectCanopySpan.textContent = project.canopy;
     projectCanopyP.appendChild(projectCanopySpan);
 
-    //creating the <h2> that holds the title
-    let projectInfoTitle = document.createElement('h2');
+    // creating the <h2> that holds the title
+    const projectInfoTitle = document.createElement('h2');
     projectInfoTitle.textContent = project.name;
     projectInfoTitle.className = 'works-item-title';
 
@@ -354,17 +352,16 @@ function displayProjectCards() {
     porjectButtonBtn.textContent = 'See Project';
     porjectButtonBtn.className = 'works-item-project-action-button';
     // porjectButtonBtn.addEventListener('click', displayProjectCardsPopup);
-    porjectButtonBtn.id = 'card-' + (index + 1);
-    porjectButtonBtn.addEventListener('click',getButtonPressed)
+    porjectButtonBtn.id = `card-${index + 1}`;
+    porjectButtonBtn.addEventListener('click', getButtonPressed);
 
     const projectButtonDiv = document.createElement('div');
     projectButtonDiv.id = 'works-item-project-action';
     projectButtonDiv.appendChild(porjectButtonBtn);
 
-
-    //Creating the <div> that holds the title and the info frame
-    let projectCardInfo = document.createElement('div');
-    projectCardInfo.className = 'works-item-project-info'
+    // Creating the <div> that holds the title and the info frame
+    const projectCardInfo = document.createElement('div');
+    projectCardInfo.className = 'works-item-project-info';
     projectCardInfo.appendChild(projectInfoTitle);
     projectCardInfo.appendChild(projectInfoFrameDiv);
 
