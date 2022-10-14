@@ -8,6 +8,9 @@ const navItemAbout = document.querySelector('#nav-item-about');
 const navItemContact = document.querySelector('#nav-item-contact');
 const popupD = document.querySelector('.popup');
 let buttonPressed = '';
+const contactForm = document.querySelector('.contact-form');
+const emailInput = document.querySelector('#email');
+const error = document.querySelector('.error');
 
 // Section that holds all of the project cards
 const projectCardsSection = document.querySelector('#works');
@@ -235,7 +238,7 @@ function displayProjectCardsPopup() {
 
       // Creating the <div> that holds the img
       const projectPopupImg = document.createElement('div');
-      projectPopupImg.className = 'popup-project-img works-item-image-1';
+      projectPopupImg.className = `popup-project-img ${project.img}`;
 
       // Creating the main container that holdds the popup
       projectsPopupDiv.className = 'projects-popup';
@@ -389,6 +392,23 @@ function displayProjectCards() {
   });
 }
 
+emailInput.addEventListener('input', (event) => {
+  event.preventDefault();
+});
+
+contactForm.addEventListener('submit', (event) => {
+  const regex = new RegExp('/^[a-z]+$/g');
+  // console.log(emailInput.innerHTML);
+  if (regex.test(emailInput.textContent)) {
+    // console.log('Enter');
+    error.textContent = 'Your email has to be lower case!';
+    error.classList.add('active');
+    event.preventDefault();
+    // console.log('ENTER');
+  } else {
+    error.classList.remove('active');
+  }
+});
 window.addEventListener('load', displayProjectCards);
 navItemContact.addEventListener('click', toggleMobileMenu);
 navItemAbout.addEventListener('click', toggleMobileMenu);
