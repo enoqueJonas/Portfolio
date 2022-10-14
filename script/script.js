@@ -6,6 +6,8 @@ const btnCloseMenu = document.querySelector('.close-menu');
 const navItemPortfolio = document.querySelector('#nav-item-portfolio');
 const navItemAbout = document.querySelector('#nav-item-about');
 const navItemContact = document.querySelector('#nav-item-contact');
+const buttons = document.querySelectorAll('button')
+const popupD = document.querySelector('.popup')
 
 // Section that holds all of the project cards
 const projectCardsSection = document.querySelector('#works');
@@ -13,7 +15,7 @@ const projectCardsSection = document.querySelector('#works');
 const projectCardsArray = [
   {
     name: 'Tonic',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard t',
+    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
     img: 'works-item-image-1',
     technologies: ['html', 'css', 'javaScript', 'github', 'ruby', 'Bootstrap'],
     linkToLive: '#',
@@ -21,10 +23,11 @@ const projectCardsArray = [
     canopy: 'Canopy',
     type: 'Back End Dev',
     year: '2011',
+    id: 'card-1'
   },
   {
-    name: 'Tonic',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard ',
+    name: 'Multi-Post Stories',
+    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
     img: 'works-item-image-2',
     technologies: ['html', 'css', 'javaScript', 'github', 'ruby', 'Bootstrap'],
     linkToLive: '#',
@@ -32,10 +35,11 @@ const projectCardsArray = [
     canopy: 'Canopy',
     type: 'Back End Dev',
     year: '2012',
+    id: 'card-2'
   },
   {
     name: 'Tonic',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard ',
+    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
     img: 'works-item-image-3',
     technologies: ['html', 'css', 'javaScript', 'github', 'ruby', 'Bootstrap'],
     linkToLive: '#',
@@ -43,10 +47,11 @@ const projectCardsArray = [
     canopy: 'Canopy',
     type: 'Back End Dev',
     year: '2013',
+    id: 'card-3'
   },
   {
-    name: 'Tonic',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard',
+    name: 'Multi-Post Stories',
+    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
     img: 'works-item-image-4',
     technologies: ['html', 'css', 'javaScript', 'github', 'ruby', 'Bootstrap'],
     linkToLive: '#',
@@ -54,14 +59,21 @@ const projectCardsArray = [
     canopy: 'Canopy',
     type: 'Back End Dev',
     year: '2022',
+    id: 'card-4'
   },
 ];
 
+let buttonPressed = '';
+const getButtonPressed = e => {
+  buttonPressed = e.target.id
+  displayProjectCardsPopup();
+}
+
 function displayProjectCardsPopup() {
-  const projectYearP = document.querySelector('.works-item-project-info-year');
   const projectsPopupDiv = document.createElement('div');
   projectCardsArray.forEach((project) => {
-    if (projectYearP.textContent.includes(project.year)) {
+    if (buttonPressed === project.id) {
+      console.log('Enter if')
       const projectYearP = document.createElement('p');
       projectYearP.className = 'works-item-project-info-year';
       projectYearP.textContent = project.year;
@@ -110,6 +122,7 @@ function displayProjectCardsPopup() {
       projectPopupClose.alt = 'cancel';
       projectPopupClose.addEventListener('click', () => {
         projectsPopupDiv.classList.toggle('active-popup');
+        popupD.classList.toggle('active-popup');
       });
 
       // creating the title of the popup and appendibg its child
@@ -237,7 +250,9 @@ function displayProjectCardsPopup() {
       projectsPopupDiv.appendChild(popupProjectHeaderDiv);
       projectsPopupDiv.appendChild(projectPopupImg);
       projectsPopupDiv.appendChild(projectPopupDetails);
+      
       projectCardsSection.appendChild(projectsPopupDiv);
+      popupD.classList.toggle('active-popup');
     }
   });
 }
@@ -283,11 +298,17 @@ function displayProjectCards() {
     projectCanopySpan.textContent = project.canopy;
     projectCanopyP.appendChild(projectCanopySpan);
 
+    //creating the <h2> that holds the title
+    let projectInfoTitle = document.createElement('h2');
+    projectInfoTitle.textContent = project.name;
+    projectInfoTitle.className = 'works-item-title';
+
     // Creating <div> that holds all of the above
     // elements that are the project info and appending its children
     let projectInfoFrameDiv = '';
     projectInfoFrameDiv = document.createElement('div');
     projectInfoFrameDiv.className = 'works-item-project-info-frame';
+    projectInfoFrameDiv.appendChild(projectCanopyP);
     projectInfoFrameDiv.appendChild(projectCanopyP);
     projectInfoFrameDiv.appendChild(projectInfoPointImg1);
     projectInfoFrameDiv.appendChild(projectTypeP);
@@ -297,7 +318,7 @@ function displayProjectCards() {
     // Creating <p> that holds the project description
     let projectDescriptionP = '';
     projectDescriptionP = document.createElement('p');
-    projectDescriptionP.innerText = project.description;
+    projectDescriptionP.innerText = 'A daily selection of privately personalized reads; no accounts or sign-ups required.';
     projectDescriptionP.className = 'works-item-project-description';
 
     // Creating <li>'s and <span>'s that hold project tecnologies
@@ -332,18 +353,27 @@ function displayProjectCards() {
     const porjectButtonBtn = document.createElement('button');
     porjectButtonBtn.textContent = 'See Project';
     porjectButtonBtn.className = 'works-item-project-action-button';
-    porjectButtonBtn.addEventListener('click', displayProjectCardsPopup);
+    // porjectButtonBtn.addEventListener('click', displayProjectCardsPopup);
+    porjectButtonBtn.id = 'card-' + (index + 1);
+    porjectButtonBtn.addEventListener('click',getButtonPressed)
 
     const projectButtonDiv = document.createElement('div');
     projectButtonDiv.id = 'works-item-project-action';
     projectButtonDiv.appendChild(porjectButtonBtn);
+
+
+    //Creating the <div> that holds the title and the info frame
+    let projectCardInfo = document.createElement('div');
+    projectCardInfo.className = 'works-item-project-info'
+    projectCardInfo.appendChild(projectInfoTitle);
+    projectCardInfo.appendChild(projectInfoFrameDiv);
 
     // Creating the <div> that is the project card
     const projectCardInfoBlockDiv = document.createElement('div');
     projectCardInfoBlockDiv.className = 'works-item-info-block';
     projectCardInfoBlockDiv.appendChild(projectDescriptionP);
     projectCardInfoBlockDiv.appendChild(projectTecnologiesUl);
-    projectCardInfoBlockDiv.appendChild(projectInfoFrameDiv);
+    projectCardInfoBlockDiv.appendChild(projectCardInfo);
     projectCardInfoBlockDiv.appendChild(projectButtonDiv);
 
     // Creating the <div> that holds the image
@@ -355,7 +385,7 @@ function displayProjectCards() {
     projectCardDiv.className = `works-item works-item-${index}`;
     projectCardDiv.appendChild(projectImgDiv);
     projectCardDiv.appendChild(projectCardInfoBlockDiv);
-    projectCardDiv.id = `card-${index}${1}`;
+    projectCardDiv.id = project.id;
 
     // Appending the current project card int the section that holds all project cards
     projectCardsSection.appendChild(projectCardDiv);

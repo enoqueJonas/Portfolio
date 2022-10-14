@@ -544,13 +544,13 @@ a {
   height: 44em;
   position: fixed;
   top: 0;
-  left: 1.1em;
+  left: 1.7em;
   background: #fff;
   border: 1px solid #ebecf0;
   box-shadow: 0 48px 48px rgb(37 47 137 / 8%);
   border-radius: 16px;
-  z-index: 1;
-  overflow: auto;
+  z-index: 100;
+  overflow: scroll;
 }
 
 .popup-project-header {
