@@ -202,6 +202,7 @@ body {
   box-shadow: 0 48px 48px rgb(37 47 137 / 8%);
   border-radius: 16px;
   overflow-y: scroll;
+  flex-grow: 0;
   z-index: 100;
 }
 
