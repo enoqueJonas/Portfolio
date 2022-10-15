@@ -433,8 +433,9 @@ function populateLocalStorage() {
   if (messageInput.value !== null) {
     localStorageDataObject.message = messageInput.value;
   }
+  let localStorageJSON = JSON.stringify(localStorageDataObject);
   if (storageAvailable('localStorage')) {
-    localStorage.setItem('formData', JSON.stringify(localStorageDataObject));
+    localStorage.setItem('formData', localStorageJSON);
   }
 }
 
