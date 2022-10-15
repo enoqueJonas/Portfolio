@@ -13,7 +13,6 @@ const nameInput = document.querySelector('#name');
 const emailInput = document.querySelector('#email');
 const messageInput = document.querySelector('#message');
 const error = document.querySelector('.error');
-let localStorageDataObject = {};
 
 // Section that holds all of the project cards
 const projectCardsSection = document.querySelector('#works');
@@ -423,7 +422,18 @@ function storageAvailable(type) {
   }
 }
 
+let localStorageDataObject = {
+  name: '',
+  email: '',
+  message: '',
+};
+
 function populateLocalStorage() {
+  localStorageDataObject = {
+    name: '',
+    email: '',
+    message: '',
+  };
   if (nameInput.value !== null) {
     localStorageDataObject.name = nameInput.value;
   }
@@ -433,18 +443,19 @@ function populateLocalStorage() {
   if (messageInput.value !== null) {
     localStorageDataObject.message = messageInput.value;
   }
-  const localStorageJSON = JSON.stringify(localStorageDataObject);
   if (storageAvailable('localStorage')) {
-    localStorage.setItem('formData', localStorageJSON);
+    localStorage.setItem('formData', JSON.stringify(localStorageDataObject));
   }
 }
 
 function loadLocalstorageData() {
   localStorageDataObject = JSON.parse(localStorage.getItem('formData'));
   if (storageAvailable('localStorage')) {
-    nameInput.value = localStorageDataObject.name;
-    emailInput.value = localStorageDataObject.email;
-    messageInput.value = localStorageDataObject.message;
+    if (localStorageDataObject != null) {
+      nameInput.value = localStorageDataObject.name;
+      emailInput.value = localStorageDataObject.email;
+      messageInput.value = localStorageDataObject.message;
+    }
   }
 }
 
