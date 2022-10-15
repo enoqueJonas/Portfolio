@@ -9,8 +9,11 @@ const navItemContact = document.querySelector('#nav-item-contact');
 const popupD = document.querySelector('.popup');
 let buttonPressed = '';
 const contactForm = document.querySelector('.contact-form');
+const nameInput = document.querySelector('#name');
 const emailInput = document.querySelector('#email');
+const messageInput = document.querySelector('#message');
 const error = document.querySelector('.error');
+let localStorageDataObject = {};
 
 // Section that holds all of the project cards
 const projectCardsSection = document.querySelector('#works');
@@ -396,6 +399,54 @@ emailInput.addEventListener('input', (event) => {
   event.preventDefault();
 });
 
+function storageAvailable(type) {
+  let storage;
+  try {
+    storage = window[type];
+    const x = '__storage_test__';
+    storage.setItem(x, x);
+    storage.removeItem(x);
+    return true;
+  } catch (e) {
+    return e instanceof DOMException && (
+      // everything except Firefox
+      e.code === 22
+      // Firefox
+      || e.code === 1014
+      // test name field too, because code might not be present
+      // everything except Firefox
+      || e.name === 'QuotaExceededError'
+      // Firefox
+      || e.name === 'NS_ERROR_DOM_QUOTA_REACHED')
+      // acknowledge QuotaExceededError only if there's something already stored
+      && (storage && storage.length !== 0);
+  }
+}
+
+function populateLocalStorage() {
+  if (nameInput.value !== null) {
+    localStorageDataObject.name = nameInput.value;
+  }
+  if (emailInput.value !== null) {
+    localStorageDataObject.email = emailInput.value;
+  }
+  if (messageInput.value !== null) {
+    localStorageDataObject.message = messageInput.value;
+  }
+  if (storageAvailable('localStorage')) {
+    localStorage.setItem('formData', JSON.stringify(localStorageDataObject));
+  }
+}
+
+function loadLocalstorageData() {
+  localStorageDataObject = JSON.parse(localStorage.getItem('formData'));
+  if (storageAvailable('localStorage')) {
+    nameInput.value = localStorageDataObject.name;
+    emailInput.value = localStorageDataObject.email;
+    messageInput.value = localStorageDataObject.message;
+  }
+}
+
 contactForm.addEventListener('submit', (event) => {
   // emailInput.pattern="/[a-z]/";
   if (emailInput.value.toLowerCase() !== emailInput.value) {
@@ -406,9 +457,14 @@ contactForm.addEventListener('submit', (event) => {
     error.classList.remove('active');
   }
 });
+
 window.addEventListener('load', displayProjectCards);
+window.addEventListener('load', loadLocalstorageData);
 navItemContact.addEventListener('click', toggleMobileMenu);
 navItemAbout.addEventListener('click', toggleMobileMenu);
 navItemPortfolio.addEventListener('click', toggleMobileMenu);
+emailInput.addEventListener('input', populateLocalStorage);
+nameInput.addEventListener('input', populateLocalStorage);
+messageInput.addEventListener('input', populateLocalStorage);
 btnCloseMenu.addEventListener('click', toggleMobileMenu);
 btnBurgerMenu.addEventListener('click', toggleMobileMenu);
