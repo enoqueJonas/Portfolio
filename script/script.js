@@ -448,9 +448,9 @@ function loadLocalstorageData() {
 }
 
 contactForm.addEventListener('submit', (event) => {
-  // emailInput.pattern="/[a-z]/";
+  const errorMsg = 'Your email has to be lower case!';
   if (emailInput.value.toLowerCase() !== emailInput.value) {
-    error.textContent = 'Your email has to be lower case!';
+    error.textContent = errorMsg;
     error.classList.add('active');
     event.preventDefault();
   } else {
