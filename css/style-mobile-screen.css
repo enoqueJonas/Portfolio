@@ -248,13 +248,17 @@ a {
   flex-grow: 0;
 }
 
+.works-item-image {
+  background-size: 100%;
+}
+
 .works-item-image-1 {
   width: 295px;
   height: 220px;
   flex: none;
   order: 0;
   flex-grow: 0;
-  background-image: url("../img/Snapshoot\ Portfolio.jpg");
+  background-image: url("../img/Portfolio-1-mobile.png");
   background-repeat: no-repeat;
 }
 
