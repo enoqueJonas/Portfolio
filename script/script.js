@@ -19,12 +19,12 @@ const projectCardsSection = document.querySelector('#works');
 
 const projectCardsArray = [
   {
-    name: 'Tonic',
+    name: 'Projecto MUDA',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     img: 'works-item-image-1',
-    technologies: ['html', 'css', 'javaScript', 'github', 'ruby', 'Bootstrap'],
+    technologies: ['html', 'css', 'javaScript', 'github'],
     linkToLive: '#',
-    linkToSource: '#',
+    linkToSource: 'https://github.com/enoqueJonas/ProjectoMuda',
     canopy: 'Canopy',
     type: 'Back End Dev',
     year: '2011',
@@ -211,8 +211,10 @@ function displayProjectCardsPopup() {
 
       const btnPopupSeeSource = document.createElement('button');
       btnPopupSeeSource.className = 'btn-see-source works-item-project-action-button';
-      const btnPopupSeeSourceSpan = document.createElement('span');
-      btnPopupSeeSourceSpan.textContent = 'See Source';
+      const btnPopupSeeSourceSpan = document.createElement('a');
+      btnPopupSeeSourceSpan.href = project.linkToSource;
+      btnPopupSeeSourceSpan.text = 'See Source'
+      btnPopupSeeSourceSpan.target = '_blank'
       const btnPopupSeeSourceImg = document.createElement('img');
       btnPopupSeeSourceImg.src = './img/Icon - Export.svg';
       btnPopupSeeSourceImg.alt = 'export';

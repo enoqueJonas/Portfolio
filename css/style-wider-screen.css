@@ -129,9 +129,10 @@ body {
 }
 
 .works-item-image-1 {
-  background: url("../img/Snapshoot\ Portfolio\ wide\ screen.png");
+  background: url("../img/Portfolio-1.png");
   background-repeat: no-repeat;
   background-size: 100%;
+  background-position: center;
 }
 
 .works-item-image-2 {
@@ -335,13 +336,14 @@ body {
   border-radius: 8px;
 }
 
-.btn-see-source span {
+.btn-see-source a {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
   flex: none;
   order: 0;
   flex-grow: 0;
+  color: #6070ff;
 }
 
 .btn-see-live {
