@@ -246,6 +246,12 @@ a {
   flex: none;
   order: 0;
   flex-grow: 0;
+  transition: transform 0.3s ease;
+}
+
+.works-item:hover {
+  transform: scale(1.07);
+  border: 1.2px solid rgb(95, 113, 251);
 }
 
 .works-item-image {
