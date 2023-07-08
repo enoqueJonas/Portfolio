@@ -213,8 +213,8 @@ function displayProjectCardsPopup() {
       btnPopupSeeSource.className = 'btn-see-source works-item-project-action-button';
       const btnPopupSeeSourceSpan = document.createElement('a');
       btnPopupSeeSourceSpan.href = project.linkToSource;
-      btnPopupSeeSourceSpan.text = 'See Source'
-      btnPopupSeeSourceSpan.target = '_blank'
+      btnPopupSeeSourceSpan.text = 'See Source';
+      btnPopupSeeSourceSpan.target = '_blank';
       const btnPopupSeeSourceImg = document.createElement('img');
       btnPopupSeeSourceImg.src = './img/Icon - Export.svg';
       btnPopupSeeSourceImg.alt = 'export';

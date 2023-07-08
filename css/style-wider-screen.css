@@ -36,7 +36,11 @@ body {
   top: 0;
 }
 
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+/*
+  Add some top padding to the page content to prevent sudden quick movement
+  (as the navigation bar gets a new position at the top of
+  the page (position:fixed and top:0)
+*/
 .sticky + .content {
   padding-top: 60px;
 }
@@ -125,7 +129,7 @@ body {
   align-items: flex-start;
 }
 
-.social-links{
+.social-links {
   width: 40px;
   height: 40px;
   transition: transform 0.3s ease;
