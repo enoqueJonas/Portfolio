@@ -266,6 +266,7 @@ function displayProjectCardsPopup() {
       projectsPopupDiv.appendChild(popupProjectHeaderDiv);
       projectsPopupDiv.appendChild(projectPopupImg);
       projectsPopupDiv.appendChild(projectPopupDetails);
+      projectsPopupDiv.style.padding = "20px 10px"
 
       projectCardsSection.appendChild(projectsPopupDiv);
       popupD.classList.toggle('active-popup');
