@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 #header-background {
@@ -19,7 +20,7 @@ body {
 #navbar {
   display: flex;
   flex-direction: row;
-  height: 72px;
+  height: 30px;
   width: 100%;
   justify-content: space-between;
   align-items: center;
@@ -436,6 +437,10 @@ body {
 
 .about-info {
   width: 447px;
+}
+
+.about-text {
+  height: 185px;
 }
 
 .language-and-skills-frame {
