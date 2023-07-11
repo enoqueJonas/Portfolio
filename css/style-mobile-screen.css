@@ -17,6 +17,10 @@ a {
   color: #6070ff;
 }
 
+a:hover {
+  color: #fff;
+}
+
 .site-wrapper {
   display: flex;
   flex-direction: column;
@@ -400,17 +404,6 @@ a {
   line-height: 16px;
   color: #7a869a;
 }
-
-/* .works-item-project-info-type {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 16px;
-  color: #7a869a;
-  flex: 1;
-  order: 3;
-  width: 40px;
-} */
 
 .works-item-project-info-year {
   display: flex;

@@ -36,47 +36,47 @@ window.onscroll = function () { controlScroll(); };
 const projectCardsArray = [
   {
     name: 'Space Travelers',
-    description: 'This app allows you to keep track of your finances. You can group a category of payments and keep track of all the transactions you do for that particular category.',
+    description: 'A front-end web application that displays SpaceX Rockets using their API. Users can rent their favorite rockets and register for SpaceX missions.',
     img: 'works-item-image-2',
-    technologies: ['html', 'css', 'Ruby on Rails', 'github', 'ruby', 'Bootstrap'],
+    technologies: ['React', 'JavaScript', 'GitHub'],
     linkToLive: '#',
-    linkToSource: '#',
+    linkToSource: 'https://github.com/enoqueJonas/space-travelers',
     canopy: 'Canopy',
-    type: 'Full-stack',
-    year: '2012',
+    type: 'Front-End',
+    year: '2022',
     id: 'card-2',
   },
   {
-    name: 'Tonic',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    name: 'Tutoring App',
+    description: 'Tutoring App is a single page app that enables users to effortlessly manage classes, including adding, deleting, and viewing class details. It also provides reservation functionality, allowing users to make reservations and view their reservation details.',
     img: 'works-item-image-3',
-    technologies: ['html', 'css', 'javaScript', 'github', 'ruby', 'Bootstrap'],
-    linkToLive: '#',
-    linkToSource: '#',
+    technologies: ['html', 'css', 'JavaScript', 'GitHub', 'Ruby', 'Bootstrap'],
+    linkToLive: 'https://tutoring-front-end.onrender.com/',
+    linkToSource: 'https://github.com/enoqueJonas/tutoring-app-frontend',
     canopy: 'Canopy',
-    type: 'Back End',
-    year: '2013',
+    type: 'Full-stack',
+    year: '2023',
     id: 'card-3',
-  },
-  {
-    name: 'Multi-Post Stories',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    img: 'works-item-image-4',
-    technologies: ['html', 'css', 'javaScript', 'github', 'ruby', 'Bootstrap'],
-    linkToLive: '#',
-    linkToSource: '#',
-    canopy: 'Canopy',
-    type: 'Back End',
-    year: '2022',
-    id: 'card-4',
   },
   {
     name: 'Projecto MUDA',
     description: 'This is a website for a nonprofit movement built so that people can have the latest information about the movement and it\'s deeds, so it can inspire at least 1 person to do good in the world.',
     img: 'works-item-image-1',
-    technologies: ['html', 'css', 'javaScript', 'github'],
+    technologies: ['HTML', 'CSS', 'JavaScript', 'GitHub'],
     linkToLive: '#',
     linkToSource: 'https://github.com/enoqueJonas/ProjectoMuda',
+    canopy: 'Canopy',
+    type: 'Front-end',
+    year: '2022',
+    id: 'card-1',
+  },
+  {
+    name: 'Book Store',
+    description: 'This is a single page application that you can use to keep a list of your favorite books. You can add, delete and update your list.',
+    img: 'works-item-image-1',
+    technologies: ['REACT', 'JavaScript', 'GitHub'],
+    linkToLive: 'https://book-store-yh39.onrender.com/',
+    linkToSource: 'https://github.com/enoqueJonas/book-store',
     canopy: 'Canopy',
     type: 'Front-end',
     year: '2022',
@@ -218,7 +218,7 @@ function displayProjectCardsPopup() {
       const btnPopupSeeLiveSpan = document.createElement('span');
       btnPopupSeeLiveSpan.textContent = 'See Live';
       const btnPopupSeeLiveImg = document.createElement('img');
-      btnPopupSeeLiveImg.src = './img/icon-GitHub.png';
+      btnPopupSeeLiveImg.src = './img/Icon - Export.svg';
       btnPopupSeeLiveImg.alt = 'github';
       btnPopupSeeLive.appendChild(btnPopupSeeLiveSpan);
       btnPopupSeeLive.appendChild(btnPopupSeeLiveImg);
@@ -230,7 +230,7 @@ function displayProjectCardsPopup() {
       btnPopupSeeSourceSpan.text = 'Source';
       btnPopupSeeSourceSpan.target = '_blank';
       const btnPopupSeeSourceImg = document.createElement('img');
-      btnPopupSeeSourceImg.src = './img/Icon - Export.svg';
+      btnPopupSeeSourceImg.src = './img/icon-GitHub.png';
       btnPopupSeeSourceImg.alt = 'export';
       btnPopupSeeSource.appendChild(btnPopupSeeSourceSpan);
       btnPopupSeeSource.appendChild(btnPopupSeeSourceImg);
