@@ -35,19 +35,7 @@ window.onscroll = function () { controlScroll(); };
 
 const projectCardsArray = [
   {
-    name: 'Projecto MUDA',
-    description: 'This is a website for a nonprofit movement built so that people can have the latest information about the movement and it\'s deeds, so it can inspire at least 1 person to do good in the world.',
-    img: 'works-item-image-1',
-    technologies: ['html', 'css', 'javaScript', 'github'],
-    linkToLive: '#',
-    linkToSource: 'https://github.com/enoqueJonas/ProjectoMuda',
-    canopy: 'Canopy',
-    type: 'Front-end',
-    year: '2011',
-    id: 'card-1',
-  },
-  {
-    name: 'Inoance',
+    name: 'Space Travelers',
     description: 'This app allows you to keep track of your finances. You can group a category of payments and keep track of all the transactions you do for that particular category.',
     img: 'works-item-image-2',
     technologies: ['html', 'css', 'Ruby on Rails', 'github', 'ruby', 'Bootstrap'],
@@ -81,6 +69,18 @@ const projectCardsArray = [
     type: 'Back End',
     year: '2022',
     id: 'card-4',
+  },
+  {
+    name: 'Projecto MUDA',
+    description: 'This is a website for a nonprofit movement built so that people can have the latest information about the movement and it\'s deeds, so it can inspire at least 1 person to do good in the world.',
+    img: 'works-item-image-1',
+    technologies: ['html', 'css', 'javaScript', 'github'],
+    linkToLive: '#',
+    linkToSource: 'https://github.com/enoqueJonas/ProjectoMuda',
+    canopy: 'Canopy',
+    type: 'Front-end',
+    year: '2022',
+    id: 'card-1',
   },
 ];
 
@@ -264,7 +264,7 @@ function displayProjectCardsPopup() {
       projectsPopupDiv.appendChild(popupProjectHeaderDiv);
       projectsPopupDiv.appendChild(projectPopupImg);
       projectsPopupDiv.appendChild(projectPopupDetails);
-      projectsPopupDiv.style.padding = "20px 10px"
+      projectsPopupDiv.style.padding = '20px 10px';
 
       projectCardsSection.appendChild(projectsPopupDiv);
       popupD.classList.toggle('active-popup');

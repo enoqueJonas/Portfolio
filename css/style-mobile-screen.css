@@ -253,7 +253,7 @@ a {
 
 .works-item:hover {
   transform: scale(1.07);
-  border: 1.2px solid rgb(95, 113, 251);
+  border: 1.2px solid rgb(95 113 251);
 }
 
 .works-item-image {
@@ -394,9 +394,14 @@ a {
   flex: none;
   order: 2;
   flex-grow: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #7a869a;
 }
 
-.works-item-project-info-type {
+/* .works-item-project-info-type {
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -405,7 +410,7 @@ a {
   flex: 1;
   order: 3;
   width: 40px;
-}
+} */
 
 .works-item-project-info-year {
   display: flex;

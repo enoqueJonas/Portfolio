@@ -225,6 +225,18 @@ body {
   height: 85px;
 }
 
+.works-item-project-info-type {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 0;
+  width: 65px;
+  height: 32px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
 .projects-popup {
   display: none;
 }
