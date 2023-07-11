@@ -36,7 +36,7 @@ window.onscroll = function () { controlScroll(); };
 const projectCardsArray = [
   {
     name: 'Projecto MUDA',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    description: 'This is a website for a nonprofit movement built so that people can have the latest information about the movement and it\'s deeds, so it can inspire at least 1 person to do good in the world.',
     img: 'works-item-image-1',
     technologies: ['html', 'css', 'javaScript', 'github'],
     linkToLive: '#',
@@ -338,7 +338,7 @@ function displayProjectCards() {
     // Creating <p> that holds the project description
     let projectDescriptionP = '';
     projectDescriptionP = document.createElement('p');
-    projectDescriptionP.innerText = 'A daily selection of privately personalized reads; no accounts or sign-ups required.';
+    projectDescriptionP.innerText = project.description;
     projectDescriptionP.className = 'works-item-project-description';
 
     // Creating <li>'s and <span>'s that hold project tecnologies
