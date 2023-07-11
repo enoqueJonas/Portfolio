@@ -14,6 +14,7 @@ li {
 
 a {
   text-decoration: none;
+  color: #6070ff;
 }
 
 .site-wrapper {
@@ -355,7 +356,6 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
   gap: 12px;
   padding: 0;
   width: 266px;
@@ -395,7 +395,7 @@ a {
   flex-grow: 0;
 }
 
-.works-item-project-info-type span {
+.works-item-project-info-type {
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -403,7 +403,7 @@ a {
   color: #7a869a;
   flex: 1;
   order: 3;
-  width: auto;
+  width: 40px;
 }
 
 .works-item-project-info-year {
@@ -556,7 +556,7 @@ a {
   height: 44em;
   position: fixed;
   top: 0;
-  left: 1.7em;
+  left: 1.5em;
   background: #fff;
   border: 1px solid #ebecf0;
   box-shadow: 0 48px 48px rgb(37 47 137 / 8%);
@@ -611,7 +611,7 @@ a {
   align-items: center;
   padding: 0;
   gap: 12px;
-  width: 236px;
+  width: 216px;
   height: 36px;
   flex: none;
   order: 1;
@@ -679,12 +679,14 @@ a {
   flex-direction: row;
   align-items: center;
   gap: 10px;
-  width: 142px;
+  width: 130px;
   height: 40px;
   left: 5px;
   bottom: 16px;
+  color: #fff;
   border: 1px solid #6070ff;
   border-radius: 8px;
+  margin: 0 15px;
 }
 
 .btn-see-source span {
@@ -694,6 +696,7 @@ a {
   flex: none;
   order: 0;
   flex-grow: 0;
+  color: #fff;
 }
 
 .btn-see-live {

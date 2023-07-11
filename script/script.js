@@ -224,10 +224,10 @@ function displayProjectCardsPopup() {
       btnPopupSeeLive.appendChild(btnPopupSeeLiveImg);
 
       const btnPopupSeeSource = document.createElement('button');
-      btnPopupSeeSource.className = 'btn-see-source works-item-project-action-button';
+      btnPopupSeeSource.className = 'btn-see-live works-item-project-action-button';
       const btnPopupSeeSourceSpan = document.createElement('a');
       btnPopupSeeSourceSpan.href = project.linkToSource;
-      btnPopupSeeSourceSpan.text = 'See Source';
+      btnPopupSeeSourceSpan.text = 'Source';
       btnPopupSeeSourceSpan.target = '_blank';
       const btnPopupSeeSourceImg = document.createElement('img');
       btnPopupSeeSourceImg.src = './img/Icon - Export.svg';
