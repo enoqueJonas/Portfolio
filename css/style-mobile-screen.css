@@ -355,9 +355,10 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   gap: 12px;
   padding: 0;
-  width: 236px;
+  width: 266px;
   height: 32px;
   flex: none;
   order: 1;
@@ -387,7 +388,7 @@ a {
   flex-direction: row;
   align-items: center;
   padding: 8px 0;
-  width: 88px;
+  width: 65px;
   height: 32px;
   flex: none;
   order: 2;
@@ -402,6 +403,7 @@ a {
   color: #7a869a;
   flex: 1;
   order: 3;
+  width: auto;
 }
 
 .works-item-project-info-year {
@@ -490,7 +492,7 @@ a {
   align-items: center;
   justify-content: center;
   padding: 4px 12px;
-  width: 45px;
+  width: auto;
   height: 24px;
   background: #ebebff;
   border-radius: 8px;

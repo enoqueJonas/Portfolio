@@ -42,19 +42,19 @@ const projectCardsArray = [
     linkToLive: '#',
     linkToSource: 'https://github.com/enoqueJonas/ProjectoMuda',
     canopy: 'Canopy',
-    type: 'Back End Dev',
+    type: 'Front-end',
     year: '2011',
     id: 'card-1',
   },
   {
-    name: 'Multi-Post Stories',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    name: 'Inoance',
+    description: 'This app allows you to keep track of your finances. You can group a category of payments and keep track of all the transactions you do for that particular category.',
     img: 'works-item-image-2',
-    technologies: ['html', 'css', 'javaScript', 'github', 'ruby', 'Bootstrap'],
+    technologies: ['html', 'css', 'Ruby on Rails', 'github', 'ruby', 'Bootstrap'],
     linkToLive: '#',
     linkToSource: '#',
     canopy: 'Canopy',
-    type: 'Back End Dev',
+    type: 'Full-stack',
     year: '2012',
     id: 'card-2',
   },
@@ -66,7 +66,7 @@ const projectCardsArray = [
     linkToLive: '#',
     linkToSource: '#',
     canopy: 'Canopy',
-    type: 'Back End Dev',
+    type: 'Back End',
     year: '2013',
     id: 'card-3',
   },
@@ -78,7 +78,7 @@ const projectCardsArray = [
     linkToLive: '#',
     linkToSource: '#',
     canopy: 'Canopy',
-    type: 'Back End Dev',
+    type: 'Back End',
     year: '2022',
     id: 'card-4',
   },
@@ -101,9 +101,7 @@ function displayProjectCardsPopup() {
       // Creating <span> and <p> that hold project type
       const projectTypeP = document.createElement('p');
       projectTypeP.className = 'works-item-project-info-type';
-      const projectTypeSpan = document.createElement('span');
-      projectTypeSpan.textContent = project.type;
-      projectTypeP.appendChild(projectTypeSpan);
+      projectTypeP.textContent = project.type;
 
       // Creating <img> that holds the bullet point for stylish purpose
       const projectInfoPointImg1 = document.createElement('img');
