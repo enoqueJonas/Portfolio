@@ -723,7 +723,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 100px 0;
+  padding: 70px 0;
   gap: 24px;
   width: 375px;
   height: 920px;
@@ -739,7 +739,7 @@ a {
   padding: 0;
   gap: 12px;
   width: 327px;
-  height: 409px;
+  height: 460px;
 }
 
 .about-title {
@@ -760,7 +760,7 @@ a {
 
 .about-text {
   width: 327px;
-  height: 144px;
+  height: 244px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -777,7 +777,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0;
+  padding-bottom: 10px;
   gap: 16px;
   width: 200px;
   height: 80px;
