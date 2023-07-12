@@ -72,7 +72,7 @@ const projectCardsArray = [
   },
   {
     name: 'Book Store',
-    description: 'This is a single page application that you can use to keep a list of your favorite books. You can add, delete and update your list.',
+    description: 'This is a single page application that you can use to keep a list of your favorite books. You can add, delete and update your list. Built with React',
     img: 'works-item-image-1',
     technologies: ['REACT', 'JavaScript', 'GitHub'],
     linkToLive: 'https://book-store-yh39.onrender.com/',
