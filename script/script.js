@@ -60,7 +60,7 @@ const projectCardsArray = [
   },
   {
     name: 'Projecto MUDA',
-    description: 'This is a website for a nonprofit movement built so that people can have the latest information about the movement and it\'s deeds, so it can inspire at least 1 person to do good in the world.',
+    description: 'This is a website for a nonprofit movement built so that people can have the latest information about the movement and it\'s deeds, so it can inspire at least 1 person to do good in the world. ',
     img: 'works-item-image-1',
     technologies: ['HTML', 'CSS', 'JavaScript', 'GitHub'],
     linkToLive: '#',
