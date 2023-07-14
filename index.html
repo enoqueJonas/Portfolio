@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style-mobile-screen.css">
     <link rel="stylesheet" media="screen and (min-width: 768px)" href="css/style-wider-screen.css">
+    <link rel="icon" href="./img/favicon.png">
     <title>Portfolio</title>
 </head>
 
@@ -16,9 +17,11 @@
     </div>
     <div class="site-wrapper">
         <section id="header-background">
-            <header class="header">
-                <nav class="navbar">
-                    <a href="index.html" class="nav-logo">My Logo</a>
+            <nav class="navbar" id="navbar">
+                <a href="index.html" class="nav-logo">
+                    <img src="./img/logo.png" alt="logo" width="50px" height="50px">
+                </a>
+                <div class="header">
                     <ul class="nav-menu">
                         <li class="nav-item">
                             <a href="#works" class="nav-link" id="nav-item-portfolio"> Portfolio </a>
@@ -30,45 +33,47 @@
                             <a href="#contact" class="nav-link" id="nav-item-contact"> Contact </a>
                         </li>
                     </ul>
-                    <img src="img/menu.svg" alt="burguer-menu" class="burger">
                     <div class="close-menu-toolbar">
                         <img src="img/close.png" alt="close menu" class="close-menu" width="40px" height="40px">
                     </div>
-                </nav>
-            </header>
+                </div>
+                <img src="img/menu.svg" alt="burguer-menu" class="burger">
+            </nav>
             <div id="primary-text">
-                <h1 class="primary-text-header">I'm Enoque <br /> Glad to see<br />you!</h1>
-                <p id="hello-text">I’m a software developer! I can help you build a product , feature or website Look
-                    through some of my work and experience! If you like what you see and have a project you need coded,
-                    don’t hestiate to contact me.</p>
-                <p id="connect">LET'S CONNECT</p>
-                <ul id="social">
-                    <li>
-                        <a href="#">
-                            <img src="./img/twitter.png" alt="twitter link">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="./img/Linkedin.png" alt="Linkedin link">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="./img/m.png" alt="m link">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="./img/github.png" alt="twitter link">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="./img/m2.png" alt="m2 link">
-                        </a>
-                    </li>
-                </ul>
+                <div class="primary-text-holder">
+                    <h1 class="primary-text-header">Hi there. <br /> I'm Enoque Jonas<br /><span style="color: rgb(95, 113, 251);">A Full-stack Engineer</span></h1>
+                    <p id="hello-text">With a background in developing efficient software applications in a global market. More than <strong>1300+</strong> hours of experience, including mentoring <strong>10+</strong> junior developers to achieve concrete goals on a strict deadline. Strong skills include React, Redux, JavaScript, Ruby on Rails, Figma, and Animation Libraries! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
+                </div>
+                <div class="social-items">
+                    <p id="connect">LET'S CONNECT</p>
+                    <ul id="social">
+                        <li>
+                            <a href="https://twitter.com/enoque_jonas" target="_blank" class="social-links">
+                                <img src="./img/twitter.png" alt="twitter link">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/enoque-macanda/" target="_blank">
+                                <img src="./img/Linkedin.png" alt="Linkedin link">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://medium.com/@enoque.macanda" target="_blank">
+                                <img src="./img/m.png" alt="m link">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/enoqueJonas" target="_blank">
+                                <img src="./img/github.png" alt="twitter link">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://angel.co/u/enoque-macanda" target="_blank">
+                                <img src="./img/m2.png" alt="m2 link">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
         <section id="works">
@@ -77,34 +82,52 @@
         <section id="about">
             <div id="top">
                 <h2 class="about-title about-info">About Myself</h2>
-                <p class="about-text about-info"> Hello I’m a software developer! I can help you build a product ,
-                    feature or website Look through some of my work and experience! If you like what you see and have a
-                    project you need coded, don’t hestiate to contact me.</p>
+                <p class="about-text about-info"> Hello, I am a Full-stack developer with a background in developing efficient software applications in a global market. I have more than <strong>1300+</strong> hours of experience, including mentoring <strong>10+</strong> junior developers to achieve concrete goals on a strict deadline. Strong skills include React, Redux, JavaScript, Ruby on Rails, Figma, and Animation Libraries! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
                 <div class="about-social-media">
                     <a class="supporting-text"">LET'S CONNECT</a>
                     <ul class=" about-social-media-links">
                         <li>
-                            <a href="#">
+                            <a 
+                                href="https://twitter.com/enoque_jonas" 
+                                target="_blank"
+                                class="social-links"
+                            >
                                 <img src="./img/twitter.png" alt="twitter link">
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a 
+                                href="https://www.linkedin.com/in/enoque-macanda/" 
+                                target="_blank"
+                                class="social-links"
+                            >
                                 <img src="./img/Linkedin.png" alt="Linkedin link">
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a 
+                                href="https://medium.com/@enoque.macanda" 
+                                target="_blank"
+                                class="social-links"    
+                            >
                                 <img src="./img/m.png" alt="m link">
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a 
+                                href="https://github.com/enoqueJonas" 
+                                target="_blank"
+                                class="social-links"
+                            >
                                 <img src="./img/github.png" alt="twitter link">
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a 
+                                href="https://angel.co/u/enoque-macanda" 
+                                target="_blank"
+                                class="social-links"    
+                            >
                                 <img src="./img/m2.png" alt="m2 link">
                             </a>
                         </li>
