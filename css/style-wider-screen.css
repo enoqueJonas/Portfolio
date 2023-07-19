@@ -179,21 +179,24 @@ body {
 }
 
 .works-item-image-2 {
-  background: url("../img/Snapshoot\ Portfolio\ wide\ screen\ 2.png");
+  background: url("../img/space-travelers.png");
   background-repeat: no-repeat;
   background-size: 100%;
+  background-position: center;
 }
 
 .works-item-image-3 {
-  background: url("../img/Snapshoot\ Portfolio\ wide\ screen\ 3.png");
+  background: url("../img/tutoring-app.png");
   background-repeat: no-repeat;
   background-size: 100%;
+  background-position: center;
 }
 
 .works-item-image-4 {
-  background: url("../img/Snapshoot\ Portfolio\ wide\ screen\ 4.png");
+  background: url("../img/book-store.png");
   background-repeat: no-repeat;
   background-size: 100%;
+  background-position: center;
 }
 
 .works-item-title {
