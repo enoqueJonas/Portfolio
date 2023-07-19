@@ -17,6 +17,9 @@ const error = document.querySelector('.error');
 // Section that holds all of the project cards
 const projectCardsSection = document.querySelector('#works');
 
+const text = "Hi there.";
+const delay = 400;
+
 const navbar = document.getElementById('navbar');
 // Get the offset position of the navbar
 const sticky = navbar.offsetTop;
@@ -31,6 +34,14 @@ function controlScroll() {
   }
 }
 
+function typeWriterEffect(i, text, element) {
+  if (i < text.length) {
+    element.textContent += text.charAt(i);
+    setTimeout(() => typeWriterEffect(i + 1, text, element), delay);
+  }
+}
+
+
 window.onscroll = function () { controlScroll(); };
 
 const projectCardsArray = [
@@ -44,7 +55,7 @@ const projectCardsArray = [
     canopy: 'Canopy',
     type: 'Front-End',
     year: '2022',
-    id: 'card-2',
+    id: 'card-1',
   },
   {
     name: 'Tutoring App',
@@ -56,11 +67,11 @@ const projectCardsArray = [
     canopy: 'Canopy',
     type: 'Full-stack',
     year: '2023',
-    id: 'card-3',
+    id: 'card-2',
   },
   {
     name: 'Projecto MUDA',
-    description: 'This is a website for a nonprofit movement built so that people can have the latest information about the movement and it\'s deeds, so it can inspire at least 1 person to do good in the world.',
+    description: 'This is a website for a nonprofit movement built so that people can have the latest information about the movement and it\'s deeds, so it can inspire at least 1 person to do good in the world.`',
     img: 'works-item-image-1',
     technologies: ['HTML', 'CSS', 'JavaScript', 'GitHub'],
     linkToLive: '#',
@@ -68,7 +79,7 @@ const projectCardsArray = [
     canopy: 'Canopy',
     type: 'Front-end',
     year: '2022',
-    id: 'card-1',
+    id: 'card-3',
   },
   {
     name: 'Book Store',
@@ -80,7 +91,7 @@ const projectCardsArray = [
     canopy: 'Canopy',
     type: 'Front-end',
     year: '2022',
-    id: 'card-1',
+    id: 'card-4',
   },
 ];
 
@@ -487,6 +498,11 @@ contactForm.addEventListener('submit', (event) => {
   }
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const typewriterElement = document.getElementById("typewriter-text");
+  typeWriterEffect(0, text, typewriterElement);
+  setInterval(() => typewriterElement.classList.toggle("blink"), 500); // Toggle blink effect
+});
 window.addEventListener('load', displayProjectCards);
 window.addEventListener('load', loadLocalstorageData);
 navItemContact.addEventListener('click', toggleMobileMenu);
