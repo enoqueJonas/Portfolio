@@ -17,7 +17,7 @@ const error = document.querySelector('.error');
 // Section that holds all of the project cards
 const projectCardsSection = document.querySelector('#works');
 
-const text = "Hi there.";
+const text = 'Hi there.';
 const delay = 400;
 
 const navbar = document.getElementById('navbar');
@@ -41,7 +41,6 @@ function typeWriterEffect(i, text, element) {
   }
 }
 
-
 window.onscroll = function () { controlScroll(); };
 
 const projectCardsArray = [
@@ -61,7 +60,7 @@ const projectCardsArray = [
     name: 'Tutoring App',
     description: 'Tutoring App is a single page app that enables users to effortlessly manage classes, including adding, deleting, and viewing class details. It also provides reservation functionality, allowing users to make reservations and view their reservation details.',
     img: 'works-item-image-3',
-    technologies: ['html', 'css', 'JavaScript', 'GitHub', 'Ruby', 'Bootstrap'],
+    technologies: ['HTML', 'CSS', 'JavaScript', 'GitHub', 'Ruby on Rails', 'Bootstrap'],
     linkToLive: 'https://tutoring-front-end.onrender.com/',
     linkToSource: 'https://github.com/enoqueJonas/tutoring-app-frontend',
     canopy: 'Canopy',
@@ -73,7 +72,7 @@ const projectCardsArray = [
     name: 'Projecto MUDA',
     description: 'This is a website for a nonprofit movement built so that people can have the latest information about the movement and it\'s deeds, so it can inspire at least 1 person to do good in the world.`',
     img: 'works-item-image-1',
-    technologies: ['HTML', 'CSS', 'JavaScript', 'GitHub', 'Figma', 'Figma'],
+    technologies: ['HTML', 'CSS', 'JavaScript', 'GitHub', 'Figma', 'Bootsrap'],
     linkToLive: '#',
     linkToSource: 'https://github.com/enoqueJonas/ProjectoMuda',
     canopy: 'Canopy',
@@ -85,7 +84,7 @@ const projectCardsArray = [
     name: 'Book Store',
     description: 'This is a single page application that you can use to keep a list of your favorite books. You can add, delete and update your list. Built with React',
     img: 'works-item-image-4',
-    technologies: ['REACT', 'JavaScript', 'GitHub', 'REST', 'JSON', 'Books API'],
+    technologies: ['React', 'JavaScript', 'GitHub', 'REST', 'JSON', 'Books API'],
     linkToLive: 'https://book-store-yh39.onrender.com/',
     linkToSource: 'https://github.com/enoqueJonas/book-store',
     canopy: 'Canopy',
@@ -498,10 +497,10 @@ contactForm.addEventListener('submit', (event) => {
   }
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-  const typewriterElement = document.getElementById("typewriter-text");
+document.addEventListener('DOMContentLoaded', () => {
+  const typewriterElement = document.getElementById('typewriter-text');
   typeWriterEffect(0, text, typewriterElement);
-  setInterval(() => typewriterElement.classList.toggle("blink"), 500); // Toggle blink effect
+  setInterval(() => typewriterElement.classList.toggle('blink'), 500); // Toggle blink effect
 });
 window.addEventListener('load', displayProjectCards);
 window.addEventListener('load', loadLocalstorageData);
