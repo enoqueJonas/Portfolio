@@ -18,7 +18,7 @@ const error = document.querySelector('.error');
 const projectCardsSection = document.querySelector('#works');
 
 const text = 'Hi there.';
-const delay = 400;
+const delay = 410;
 
 const navbar = document.getElementById('navbar');
 // Get the offset position of the navbar
