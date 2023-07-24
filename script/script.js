@@ -17,6 +17,9 @@ const error = document.querySelector('.error');
 // Section that holds all of the project cards
 const projectCardsSection = document.querySelector('#works');
 
+const text = 'Hi there.';
+const delay = 410;
+
 const navbar = document.getElementById('navbar');
 // Get the offset position of the navbar
 const sticky = navbar.offsetTop;
@@ -31,6 +34,13 @@ function controlScroll() {
   }
 }
 
+function typeWriterEffect(i, text, element) {
+  if (i < text.length) {
+    element.textContent += text.charAt(i);
+    setTimeout(() => typeWriterEffect(i + 1, text, element), delay);
+  }
+}
+
 window.onscroll = function () { controlScroll(); };
 
 const projectCardsArray = [
@@ -38,49 +48,49 @@ const projectCardsArray = [
     name: 'Space Travelers',
     description: 'A front-end web application that displays SpaceX Rockets using their API. Users can rent their favorite rockets and register for SpaceX missions.',
     img: 'works-item-image-2',
-    technologies: ['React', 'JavaScript', 'GitHub'],
+    technologies: ['React', 'JavaScript', 'GitHub', 'REST', 'JSON', 'SpaceX API'],
     linkToLive: '#',
     linkToSource: 'https://github.com/enoqueJonas/space-travelers',
     canopy: 'Canopy',
     type: 'Front-End',
     year: '2022',
-    id: 'card-2',
+    id: 'card-1',
   },
   {
     name: 'Tutoring App',
     description: 'Tutoring App is a single page app that enables users to effortlessly manage classes, including adding, deleting, and viewing class details. It also provides reservation functionality, allowing users to make reservations and view their reservation details.',
     img: 'works-item-image-3',
-    technologies: ['html', 'css', 'JavaScript', 'GitHub', 'Ruby', 'Bootstrap'],
+    technologies: ['HTML', 'CSS', 'JavaScript', 'GitHub', 'Ruby on Rails', 'Bootstrap'],
     linkToLive: 'https://tutoring-front-end.onrender.com/',
     linkToSource: 'https://github.com/enoqueJonas/tutoring-app-frontend',
     canopy: 'Canopy',
     type: 'Full-stack',
     year: '2023',
-    id: 'card-3',
+    id: 'card-2',
   },
   {
     name: 'Projecto MUDA',
-    description: 'This is a website for a nonprofit movement built so that people can have the latest information about the movement and it\'s deeds, so it can inspire at least 1 person to do good in the world.',
+    description: 'This is a website for a nonprofit movement built so that people can have the latest information about the movement and it\'s deeds, so it can inspire at least 1 person to do good in the world.`',
     img: 'works-item-image-1',
-    technologies: ['HTML', 'CSS', 'JavaScript', 'GitHub'],
+    technologies: ['HTML', 'CSS', 'JavaScript', 'GitHub', 'Figma', 'Bootsrap'],
     linkToLive: '#',
     linkToSource: 'https://github.com/enoqueJonas/ProjectoMuda',
     canopy: 'Canopy',
     type: 'Front-end',
     year: '2022',
-    id: 'card-1',
+    id: 'card-3',
   },
   {
     name: 'Book Store',
-    description: 'This is a single page application that you can use to keep a list of your favorite books. You can add, delete and update your list. Built with React',
-    img: 'works-item-image-1',
-    technologies: ['REACT', 'JavaScript', 'GitHub'],
+    description: 'This is a single page application that you can use to keep a list of your favorite books. You can add, delete and update your list. Built with React.',
+    img: 'works-item-image-4',
+    technologies: ['React', 'JavaScript', 'GitHub', 'REST', 'JSON', 'Books API'],
     linkToLive: 'https://book-store-yh39.onrender.com/',
     linkToSource: 'https://github.com/enoqueJonas/book-store',
     canopy: 'Canopy',
     type: 'Front-end',
     year: '2022',
-    id: 'card-1',
+    id: 'card-4',
   },
 ];
 
@@ -487,6 +497,11 @@ contactForm.addEventListener('submit', (event) => {
   }
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  const typewriterElement = document.getElementById('typewriter-text');
+  typeWriterEffect(0, text, typewriterElement);
+  setInterval(() => typewriterElement.classList.toggle('blink'), 500); // Toggle blink effect
+});
 window.addEventListener('load', displayProjectCards);
 window.addEventListener('load', loadLocalstorageData);
 navItemContact.addEventListener('click', toggleMobileMenu);

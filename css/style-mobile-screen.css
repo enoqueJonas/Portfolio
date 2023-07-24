@@ -134,6 +134,26 @@ a:hover {
   color: #482ff7;
 }
 
+.typewriter {
+  font-size: 1.05em;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  animation: typing 5s steps(22), blink 0.5s step-end infinite alternate;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
 .about-social-media-links {
   list-style: none;
   display: flex;
