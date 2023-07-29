@@ -461,15 +461,9 @@ function populateLocalStorage() {
     email: '',
     message: '',
   };
-  if (nameInput.value !== null) {
-    localStorageDataObject.name = nameInput.value;
-  }
-  if (emailInput.value !== null) {
-    localStorageDataObject.email = emailInput.value;
-  }
-  if (messageInput.value !== null) {
-    localStorageDataObject.message = messageInput.value;
-  }
+  localStorageDataObject.name = nameInput.value;
+  localStorageDataObject.email = emailInput.value;
+  localStorageDataObject.message = messageInput.value;
   if (storageAvailable('localStorage')) {
     localStorage.setItem('formData', JSON.stringify(localStorageDataObject));
   }
