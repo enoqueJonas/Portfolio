@@ -88,7 +88,7 @@ const projectCardsArray = [
     linkToLive: 'https://book-store-yh39.onrender.com/',
     linkToSource: 'https://github.com/enoqueJonas/book-store',
     canopy: 'Canopy',
-    type: 'Front-end',
+    type: 'Full-stack',
     year: '2022',
     id: 'card-4',
   },
