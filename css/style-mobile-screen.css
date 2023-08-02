@@ -921,6 +921,24 @@ a:hover {
   color: #000;
 }
 
+/* (A) HIDE CHECKBOX */
+.togCheck { display: none; }
+ 
+/* (B) HIDE CONTENT BY DEFAULT */
+.togContent {
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: max-height 1s;
+}
+
+/* (C) SHOW CONTENT WHEN CHECKED */
+.togCheck:checked + .togContent {
+  max-height: 100vh; /* any insanely large number if a lot of contents */
+  opacity: 1;
+  visibility: visible;
+}
+
 .languages-frame-title h3 {
   height: 24px;
   left: 12px;
