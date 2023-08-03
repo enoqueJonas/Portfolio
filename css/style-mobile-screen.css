@@ -900,25 +900,6 @@ a:hover {
   flex-grow: 0;
 }
 
-.panel-heading.collapsed .fa-chevron-down,
-.panel-heading .fa-chevron-right {
-  display: none;
-}
-
-.panel-heading.collapsed .fa-chevron-right,
-.panel-heading .fa-chevron-down {
-  display: inline-block;
-}
-
-i.fa {
-  cursor: pointer;
-  margin-right: 5px;
-}
-
-.collapsed ~ .panel-body {
-  padding: 0;
-}
-
 .languages-frame-title {
   display: flex;
   flex-direction: row;
@@ -941,24 +922,27 @@ i.fa {
 }
 
 /* (A) HIDE CHECKBOX */
-.togCheck { display: none; }
- 
+.tog-check { display: none; }
+
 /* (B) HIDE CONTENT BY DEFAULT */
-.togContent {
-  max-height: 0;
+.tog-content {
+  display: none;
   opacity: 0;
   visibility: hidden;
-  transition: max-height 1s;
+  overflow: hidden;
+  transition: max-height 1s, opacity 1s, visibility 0.5s;
 }
 
 /* (C) SHOW CONTENT WHEN CHECKED */
-.togCheck:checked + .togContent {
-  max-height: 100vh; /* any insanely large number if a lot of contents */
+.tog-check:checked + .tog-content {
+  display: block;
+  max-height: 1000px; /* Adjust to an appropriate value */
   opacity: 1;
   visibility: visible;
+  transition: max-height 1s, opacity 1s, visibility 1s;
 }
 
-.languages-frame-title h3 {
+.languages-frame-title label {
   height: 24px;
   left: 12px;
   right: 78px;

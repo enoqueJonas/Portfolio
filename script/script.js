@@ -13,6 +13,12 @@ const nameInput = document.querySelector('#name');
 const emailInput = document.querySelector('#email');
 const messageInput = document.querySelector('#message');
 const error = document.querySelector('.error');
+const skillsDiv = document.getElementById('skills');
+const languagesCheckBox = document.getElementById('check');
+const frameworksCheckBox = document.getElementById('check-frameworks');
+const frameworksDiv = document.querySelector('.frameworks');
+const habsDiv = document.querySelector('.habs');
+const habsCheckBox = document.getElementById('check-skills');
 
 // Section that holds all of the project cards
 const projectCardsSection = document.querySelector('#works');
@@ -40,6 +46,30 @@ function typeWriterEffect(i, text, element) {
     setTimeout(() => typeWriterEffect(i + 1, text, element), delay);
   }
 }
+
+languagesCheckBox.addEventListener('change', () => {
+  if (languagesCheckBox.checked) {
+    skillsDiv.style.height = '200px';
+  } else {
+    skillsDiv.style.height = '50px';
+  }
+});
+
+frameworksCheckBox.addEventListener('change', () => {
+  if (frameworksCheckBox.checked) {
+    frameworksDiv.style.height = '300px';
+  } else {
+    frameworksDiv.style.height = '50px';
+  }
+});
+
+habsCheckBox.addEventListener('change', () => {
+  if (habsCheckBox.checked) {
+    habsDiv.style.height = '300px';
+  } else {
+    habsDiv.style.height = '50px';
+  }
+});
 
 window.onscroll = function () { controlScroll(); };
 

@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/style-mobile-screen.css">
     <link rel="stylesheet" media="screen and (min-width: 768px)" href="css/style-wider-screen.css">
     <link rel="icon" href="./img/favicon.png">
+    <!-- Link to Font Awesome CSS -->
+    <link rel="stylesheet" href="css/fontawesome.min.css">
     <title>Portfolio</title>
 </head>
 
@@ -41,8 +43,14 @@
             </nav>
             <div id="primary-text">
                 <div class="primary-text-holder">
-                    <h1 class="primary-text-header"><span class="typewriter" id="typewriter-text"></span> <br /> I'm Enoque Jonas<br /><span style="color: rgb(95, 113, 251);">A Full-stack Engineer</span></h1>
-                    <p id="hello-text">With a background in developing efficient software applications in a global market. More than <strong>1300+</strong> hours of experience, including mentoring <strong>10+</strong> junior developers to achieve concrete goals on a strict deadline. Strong skills include React, Redux, JavaScript, Ruby on Rails, Figma, and Animation Libraries! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
+                    <h1 class="primary-text-header"><span class="typewriter" id="typewriter-text"></span> <br /> I'm
+                        Enoque Jonas<br /><span style="color: rgb(95, 113, 251);">A Full-stack Engineer</span></h1>
+                    <p id="hello-text">With a background in developing efficient software applications in a global
+                        market. More than <strong>1300+</strong> hours of experience, including mentoring
+                        <strong>10+</strong> junior developers to achieve concrete goals on a strict deadline. Strong
+                        skills include React, Redux, JavaScript, Ruby on Rails, Figma, and Animation Libraries! If you
+                        like what you see and have a project you need coded, don’t hestiate to contact me.
+                    </p>
                 </div>
                 <div class="social-items">
                     <p id="connect">LET'S CONNECT</p>
@@ -77,57 +85,42 @@
             </div>
         </section>
         <section id="works">
-            
+
         </section>
         <section id="about">
             <div id="top">
                 <h2 class="about-title about-info">About Myself</h2>
-                <p class="about-text about-info"> Hello, I am a Full-stack developer with a background in developing efficient software applications in a global market. I have more than <strong>1300+</strong> hours of experience, including mentoring <strong>10+</strong> junior developers to achieve concrete goals on a strict deadline. Strong skills include React, Redux, JavaScript, Ruby on Rails, Figma, and Animation Libraries! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
+                <p class="about-text about-info"> Hello, I am a Full-stack developer with a background in developing
+                    efficient software applications in a global market. I have more than <strong>1300+</strong> hours of
+                    experience, including mentoring <strong>10+</strong> junior developers to achieve concrete goals on
+                    a strict deadline. Strong skills include React, Redux, JavaScript, Ruby on Rails, Figma, and
+                    Animation Libraries! If you like what you see and have a project you need coded, don’t hestiate to
+                    contact me.</p>
                 <div class="about-social-media">
                     <a class="supporting-text"">LET'S CONNECT</a>
                     <ul class=" about-social-media-links">
                         <li>
-                            <a 
-                                href="https://twitter.com/enoque_jonas" 
-                                target="_blank"
-                                class="social-links"
-                            >
+                            <a href="https://twitter.com/enoque_jonas" target="_blank" class="social-links">
                                 <img src="./img/twitter.png" alt="twitter link">
                             </a>
                         </li>
                         <li>
-                            <a 
-                                href="https://www.linkedin.com/in/enoque-macanda/" 
-                                target="_blank"
-                                class="social-links"
-                            >
+                            <a href="https://www.linkedin.com/in/enoque-macanda/" target="_blank" class="social-links">
                                 <img src="./img/Linkedin.png" alt="Linkedin link">
                             </a>
                         </li>
                         <li>
-                            <a 
-                                href="https://medium.com/@enoque.macanda" 
-                                target="_blank"
-                                class="social-links"    
-                            >
+                            <a href="https://medium.com/@enoque.macanda" target="_blank" class="social-links">
                                 <img src="./img/m.png" alt="m link">
                             </a>
                         </li>
                         <li>
-                            <a 
-                                href="https://github.com/enoqueJonas" 
-                                target="_blank"
-                                class="social-links"
-                            >
+                            <a href="https://github.com/enoqueJonas" target="_blank" class="social-links">
                                 <img src="./img/github.png" alt="twitter link">
                             </a>
                         </li>
                         <li>
-                            <a 
-                                href="https://angel.co/u/enoque-macanda" 
-                                target="_blank"
-                                class="social-links"    
-                            >
+                            <a href="https://angel.co/u/enoque-macanda" target="_blank" class="social-links">
                                 <img src="./img/m2.png" alt="m2 link">
                             </a>
                         </li>
@@ -138,43 +131,78 @@
             <ul class="language-and-skills-frame">
                 <li id="skills">
                     <div class="languages-frame">
-                        <div class="panel panel-info">
-                            <div class="panel-heading collapsed" data-toggle="collapse" data-target="#bar">
-                              <i class="fa fa-fw fa-chevron-down"></i>
-                              <i class="fa fa-fw fa-chevron-right"></i>Languages
-                            </div>
-                            <div class="panel-body">
-                              <!-- The inside div eliminates the 'jumping' animation. -->
-                              <div class="collapse" id="bar">
-                                <ul class="language-list">
-                                    <li>
-                                        <div class="icon-language icon-language-javascript"></div>
-                                        <p>JavaScript</p>
-                                    </li>
-                                    <li>
-                                        <div class="icon-language icon-language-html"></div>
-                                        <p>HTML</p>
-                                    </li>
-                                    <li>
-                                        <div class="icon-language icon-language-css"></div>
-                                        <p>CSS</p>
-                                    </li>
-                                </ul>
-                              </div>
-                            </div>
+                        <div class="languages-frame-title">
+                            <img src="img/Disabled.png" alt="" class="languages-frame-dropdown">
+                            <!-- (A) TOGGLE BUTTON -->
+                            <label for="check" class="tog-button languages-frame-title-h3">Languages</label>
+                        </div>
+
+                        <!-- (B) CONTENT -->
+                        <input type="checkbox" class="tog-check" id="check">
+                        <div class="tog-content">
+                            <ul class="language-list">
+                                <li>
+                                    <div class="icon-language icon-language-javascript"></div>
+                                    <p>JavaScript</p>
+                                </li>
+                                <li>
+                                    <div class="icon-language icon-language-html"></div>
+                                    <p>HTML</p>
+                                </li>
+                                <li>
+                                    <div class="icon-language icon-language-css"></div>
+                                    <p>CSS</p>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </li>
                 <li class="frameworks">
                     <div class="frameworks-frame-title">
                         <img src="img/Disabled.png" alt="" class="framework-frame-dropdown">
-                        <h3 class="frameworks-frame-title-h3"> Frameworks</h3>
+                        <label for="check-frameworks" class="frameworks-frame-title-h3"> Frameworks</label>
+                    </div>
+                    <!-- (B) CONTENT -->
+                    <input type="checkbox" class="tog-check" id="check-frameworks">
+                    <div class="tog-content">
+                        <ul class="language-list">
+                            <li>
+                                <div class="icon-language icon-language-javascript"></div>
+                                <p>JavaScript</p>
+                            </li>
+                            <li>
+                                <div class="icon-language icon-language-html"></div>
+                                <p>HTML</p>
+                            </li>
+                            <li>
+                                <div class="icon-language icon-language-css"></div>
+                                <p>CSS</p>
+                            </li>
+                        </ul>
                     </div>
                 </li>
                 <li class="habs">
                     <div class="habs-frame-title">
                         <img src="img/Disabled.png" alt="" class="habs-frame-dropdown">
-                        <h3 class="habs-frame-title-h3"> Skills</h3>
+                        <label for="check-skills" class="habs-frame-title-h3"> Skills</label>
+                    </div>
+                    <!-- (B) CONTENT -->
+                    <input type="checkbox" class="tog-check" id="check-skills">
+                    <div class="tog-content">
+                        <ul class="language-list">
+                            <li>
+                                <div class="icon-language icon-language-javascript"></div>
+                                <p>JavaScript</p>
+                            </li>
+                            <li>
+                                <div class="icon-language icon-language-html"></div>
+                                <p>HTML</p>
+                            </li>
+                            <li>
+                                <div class="icon-language icon-language-css"></div>
+                                <p>CSS</p>
+                            </li>
+                        </ul>
                     </div>
                 </li>
             </ul>
@@ -198,6 +226,12 @@
         </section>
     </div>
     <script src="./script/script.js"> </script>
+    <script src="./script/script.js"> </script>
+    <!-- Link to Bootstrap JavaScript -->
+    <script src="./script/bootstrap.min.js"></script>
+
+    <!-- Link to Font Awesome JavaScript (if you need it) -->
+    <script src="./script/fontawesome.min.js"></script>
 </body>
 
 </html>
