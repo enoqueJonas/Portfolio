@@ -138,14 +138,14 @@
             <ul class="language-and-skills-frame">
                 <li id="skills">
                     <div class="languages-frame">
-                        <div class="panel panel-info">
-                            <div class="panel-heading collapsed" data-toggle="collapse" data-target="#bar">
-                              <i class="fa fa-fw fa-chevron-down"></i>
-                              <i class="fa fa-fw fa-chevron-right"></i>Languages
-                            </div>
-                            <div class="panel-body">
-                              <!-- The inside div eliminates the 'jumping' animation. -->
-                              <div class="collapse" id="bar">
+                        <div class="languages-frame-title">
+                            <img src="img/Disabled.png" alt="" class="languages-frame-dropdown">
+                            <!-- (A) TOGGLE BUTTON -->
+                            <label for="check" class="togButton languages-frame-title-h3">Languages</label>
+                            
+                            <!-- (B) CONTENT -->
+                            <input type="checkbox" class="togCheck" id="check">
+                            <div class="togContent">
                                 <ul class="language-list">
                                     <li>
                                         <div class="icon-language icon-language-javascript"></div>
@@ -160,7 +160,6 @@
                                         <p>CSS</p>
                                     </li>
                                 </ul>
-                              </div>
                             </div>
                         </div>
                     </div>
