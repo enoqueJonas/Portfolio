@@ -26,6 +26,12 @@ a:hover {
   flex-direction: column;
 }
 
+.fa {
+  color: rgba(0, 0, 0, .8);
+  margin: 0;
+  padding: 0;
+}
+
 #header-background {
   display: flex;
   width: 100%;
@@ -172,6 +178,7 @@ a:hover {
   flex-direction: row;
   align-items: flex-start;
   padding: 8px;
+  padding-top: 0;
   width: 40px;
   height: 40px;
   border-radius: 8px;
@@ -225,7 +232,16 @@ a:hover {
   height: 20px;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 0;
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+.social-links{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .language-list li {
@@ -800,9 +816,8 @@ a:hover {
   flex-direction: column;
   align-items: flex-start;
   padding-bottom: 10px;
-  gap: 16px;
   width: 200px;
-  height: 80px;
+  height: 60px;
   flex: none;
   order: 2;
   flex-grow: 0;
@@ -815,7 +830,7 @@ a:hover {
   padding: 0;
   gap: 8px;
   width: 150px;
-  height: 24px;
+  height: 15px;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
