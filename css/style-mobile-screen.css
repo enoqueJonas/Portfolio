@@ -246,7 +246,6 @@ a:hover {
 }
 
 .language-list li {
-  width: 303px;
   background: #f7f7f9;
   border-radius: 8px;
   display: flex;
@@ -892,16 +891,29 @@ a:hover {
   flex-grow: 0;
 }
 
+.collapsible {
+  margin: 15px;
+}
+
+.collapsible label {
+  font-weight: 500;
+  font-size: 20px;
+  color: #000;
+  display: flex;
+  align-items: center;
+  height: 24px;
+  left: 12px;
+}
+
 #skills {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0;
+  flex-direction: row;
   width: 327px;
-  height: 320px;
+  height: 72px;
   flex: none;
   order: 1;
   flex-grow: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
 }
 
 .languages-frame {
@@ -958,30 +970,12 @@ a:hover {
   transition: max-height 1s, opacity 1s, visibility 1s;
 }
 
-.languages-frame-title label {
-  height: 24px;
-  left: 12px;
-  right: 78px;
-  top: calc(50% - 24px / 2);
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
+.dropdown-i {
   display: flex;
-  align-items: center;
-  color: #000;
-}
-
-.languages-frame-dropdown {
-  order: 1;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 8px;
-  width: 40px;
-  height: 40px;
-  right: 26px;
-  top: calc(50% - 40px / 2);
-  border-radius: 8px;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+  order: 2;
 }
 
 .language-list {
@@ -1004,9 +998,9 @@ a:hover {
 }
 
 .icon-language-javascript {
-  background-image: url("../img/javascript.jpg");
+  background-image: url("../img/js.png");
   background-repeat: no-repeat;
-  top: calc(50% - 48px / 2 - 0.36px);
+  background-size: 100%;
   border-radius: 8px;
   flex: 0.3;
 }
@@ -1039,6 +1033,7 @@ a:hover {
   flex: none;
   order: 1;
   flex-grow: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
 }
 
 .frameworks-frame-title {
@@ -1049,25 +1044,13 @@ a:hover {
   height: 72px;
 }
 
-.framework-frame-dropdown {
-  order: 1;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 8px;
-  width: 40px;
-  height: 40px;
-  right: 26px;
-  top: calc(50% - 40px / 2);
-  border-radius: 8px;
-}
-
 .habs {
   width: 327px;
   height: 72px;
   flex: none;
   order: 2;
   flex-grow: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
 }
 
 .habs-frame-title {
@@ -1076,19 +1059,6 @@ a:hover {
   justify-content: space-between;
   width: 327px;
   height: 72px;
-}
-
-.habs-frame-dropdown {
-  order: 1;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 8px;
-  width: 40px;
-  height: 40px;
-  right: 26px;
-  top: calc(50% - 40px / 2);
-  border-radius: 8px;
 }
 
 #contact {

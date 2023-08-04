@@ -54,23 +54,23 @@ const expandLanguagesDiv = () => {
   if (languagesCheckBox.checked) {
     skillsDiv.style.height = '200px';
   } else {
-    skillsDiv.style.height = '50px';
+    skillsDiv.style.height = '72px';
   }
 };
 
 const expandFrameworksDiv = () => {
   if (frameworksCheckBox.checked) {
-    frameworksDiv.style.height = '300px';
+    frameworksDiv.style.height = '200px';
   } else {
-    frameworksDiv.style.height = '50px';
+    frameworksDiv.style.height = '72px';
   }
 };
 
 const expandHbsDiv = () => {
   if (habsCheckBox.checked) {
-    habsDiv.style.height = '300px';
+    habsDiv.style.height = '200px';
   } else {
-    habsDiv.style.height = '50px';
+    habsDiv.style.height = '72px';
   }
 };
 
@@ -80,7 +80,7 @@ langArrow.addEventListener('click', () => {
 });
 
 frameArrow.addEventListener('click', () => {
-  frameworksCheckBox.checked = !languagesCheckBox.checked;
+  frameworksCheckBox.checked = !frameworksCheckBox.checked;
   expandFrameworksDiv();
 });
 

@@ -125,43 +125,41 @@
                                 <i class="fa fa-angellist fa-2x" aria-hidden="true"></i>
                             </a>
                         </li>
-                    </ul>
+                        </ul>
                 </div>
                 <button id="btn-get-resume"> Get my resume </button>
             </div>
             <ul class="language-and-skills-frame">
-                <li id="skills">
-                    <div class="languages-frame">
-                        <div class="languages-frame-title">
-                            <i src="" alt="" id="languages-arrow" class="languages-frame-dropdown fa fa-chevron-right"></i>
-                            <!-- (A) TOGGLE BUTTON -->
-                            <label for="check" class="tog-button languages-frame-title-h3">Languages</label>
-                        </div>
-
-                        <!-- (B) CONTENT -->
-                        <input type="checkbox" class="tog-check" id="check">
-                        <div class="tog-content">
-                            <ul class="language-list">
-                                <li>
-                                    <div class="icon-language icon-language-javascript"></div>
-                                    <p>JavaScript</p>
-                                </li>
-                                <li>
-                                    <div class="icon-language icon-language-html"></div>
-                                    <p>HTML</p>
-                                </li>
-                                <li>
-                                    <div class="icon-language icon-language-css"></div>
-                                    <p>CSS</p>
-                                </li>
-                            </ul>
-                        </div>
+                <li id="skills" class="collapsible">
+                    <div class="languages-frame-title">
+                        <i src="" alt="" id="languages-arrow"
+                            class="dropdown-i languages-frame-dropdown fa fa-chevron-right"></i>
+                        <!-- (A) TOGGLE BUTTON -->
+                        <label for="check" class="tog-button languages-frame-title-h3">Languages</label>
                     </div>
+
+                    <!-- (B) CONTENT -->
+                    <input type="checkbox" class="tog-check" id="check">
+                    <div class="tog-content">
+                        <ul class="language-list">
+                            <li>
+                                <div class="icon-language icon-language-javascript"> </div>
+                            </li>
+                            <li>
+                                <div class="icon-language icon-language-html"></div>
+                            </li>
+                            <li>
+                                <div class="icon-language icon-language-css"></div>
+                            </li>
+                        </ul>
+                    </div>
+
                 </li>
-                <li class="frameworks">
+                <li class="frameworks collapsible">
                     <div class="frameworks-frame-title">
-                        <i src="" alt="" id="frameworks-arrow" class="framework-frame-dropdown fa fa-chevron-right"></i>
-                        <label for="check-frameworks" class="frameworks-frame-title-h3"> Frameworks</label>
+                        <i src="" alt="" id="frameworks-arrow"
+                            class="dropdown-i  framework-frame-dropdown fa fa-chevron-right"></i>
+                        <label for="check-frameworks" class="frameworks-frame-title-h3"> Frameworks & Libraries</label>
                     </div>
                     <!-- (B) CONTENT -->
                     <input type="checkbox" class="tog-check" id="check-frameworks">
@@ -182,9 +180,10 @@
                         </ul>
                     </div>
                 </li>
-                <li class="habs">
+                <li class="habs collapsible">
                     <div class="habs-frame-title">
-                        <i src="" alt="" id="habs-arrow" class="habs-frame-dropdown fa fa-chevron-right"></i>
+                        <i src="" alt="" id="habs-arrow"
+                            class="dropdown-i  habs-frame-dropdown fa fa-chevron-right"></i>
                         <label for="check-skills" class="habs-frame-title-h3"> Skills</label>
                     </div>
                     <!-- (B) CONTENT -->
