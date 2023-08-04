@@ -1006,21 +1006,81 @@ a:hover {
 }
 
 .icon-language-html {
-  background-image: url("../img/html.jpg");
+  background-image: url("../img/html5.png");
   background-repeat: no-repeat;
-  left: 12px;
-  top: calc(50% - 48px / 2 - 0.36px);
+  background-size: 100%;
+  border-radius: 8px;
+  flex: 0.3;
+}
+
+.icon-language-ruby {
+  background-image: url("../img/rubi.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
   border-radius: 8px;
   flex: 0.3;
 }
 
 .icon-language-css {
-  background-image: url("../img/css.jpg");
+  background-image: url("../img/icons8-css3-480.png");
   background-repeat: no-repeat;
-  width: 48px;
-  height: 48px;
-  left: 12px;
-  top: calc(50% - 48px / 2 - 0.36px);
+  background-size: 100%;
+  border-radius: 8px;
+  flex: 0.3;
+}
+
+.icon-language-java {
+  background-image: url("../img/java.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 8px;
+  flex: 0.3;
+}
+
+.icon-language-csharp {
+  background-image: url("../img/icons8-c-sharp-logo-480.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 8px;
+  flex: 0.3;
+}
+
+.icon-language-ror {
+  background-image: url("../img/icons8-ruby-on-rails-512.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 8px;
+  flex: 0.3;
+}
+
+.icon-language-react {
+  background-image: url("../img/icons8-react-480.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 8px;
+  flex: 0.3;
+}
+
+.icon-language-redux {
+  background-image: url("../img/icons8-redux-480.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 8px;
+  flex: 0.3;
+}
+
+.icon-language-heroku {
+  background-image: url("../img/icons8-github-512.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 8px;
+  flex: 0.3;
+}
+
+.icon-language-github {
+  background-image: url("../img/icons8-heroku-480.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
   border-radius: 8px;
   flex: 0.3;
 }
