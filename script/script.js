@@ -19,6 +19,9 @@ const frameworksCheckBox = document.getElementById('check-frameworks');
 const frameworksDiv = document.querySelector('.frameworks');
 const habsDiv = document.querySelector('.habs');
 const habsCheckBox = document.getElementById('check-skills');
+const langArrow = document.getElementById('languages-arrow');
+const frameArrow = document.getElementById('frameworks-arrow');
+const habArrow = document.getElementById('habs-arrow');
 
 // Section that holds all of the project cards
 const projectCardsSection = document.querySelector('#works');
@@ -47,29 +50,50 @@ function typeWriterEffect(i, text, element) {
   }
 }
 
-languagesCheckBox.addEventListener('change', () => {
+const expandLanguagesDiv = () => {
   if (languagesCheckBox.checked) {
     skillsDiv.style.height = '200px';
   } else {
     skillsDiv.style.height = '50px';
   }
-});
+};
 
-frameworksCheckBox.addEventListener('change', () => {
+const expandFrameworksDiv = () => {
   if (frameworksCheckBox.checked) {
     frameworksDiv.style.height = '300px';
   } else {
     frameworksDiv.style.height = '50px';
   }
-});
+};
 
-habsCheckBox.addEventListener('change', () => {
+const expandHbsDiv = () => {
   if (habsCheckBox.checked) {
     habsDiv.style.height = '300px';
   } else {
     habsDiv.style.height = '50px';
   }
+};
+
+langArrow.addEventListener('click', () => {
+  languagesCheckBox.checked = !languagesCheckBox.checked;
+  expandLanguagesDiv();
 });
+
+frameArrow.addEventListener('click', () => {
+  frameworksCheckBox.checked = !languagesCheckBox.checked;
+  expandFrameworksDiv();
+});
+
+habArrow.addEventListener('click', () => {
+  habsCheckBox.checked = !habsCheckBox.checked;
+  expandHbsDiv();
+});
+
+languagesCheckBox.addEventListener('change', expandLanguagesDiv);
+
+frameworksCheckBox.addEventListener('change', expandFrameworksDiv);
+
+habsCheckBox.addEventListener('change', expandHbsDiv);
 
 window.onscroll = function () { controlScroll(); };
 
