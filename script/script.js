@@ -13,6 +13,15 @@ const nameInput = document.querySelector('#name');
 const emailInput = document.querySelector('#email');
 const messageInput = document.querySelector('#message');
 const error = document.querySelector('.error');
+const skillsDiv = document.getElementById('skills');
+const languagesCheckBox = document.getElementById('check');
+const frameworksCheckBox = document.getElementById('check-frameworks');
+const frameworksDiv = document.querySelector('.frameworks');
+const habsDiv = document.querySelector('.habs');
+const habsCheckBox = document.getElementById('check-skills');
+const langArrow = document.getElementById('languages-arrow');
+const frameArrow = document.getElementById('frameworks-arrow');
+const habArrow = document.getElementById('habs-arrow');
 
 // Section that holds all of the project cards
 const projectCardsSection = document.querySelector('#works');
@@ -40,6 +49,51 @@ function typeWriterEffect(i, text, element) {
     setTimeout(() => typeWriterEffect(i + 1, text, element), delay);
   }
 }
+
+const expandLanguagesDiv = () => {
+  if (languagesCheckBox.checked) {
+    skillsDiv.style.height = '200px';
+  } else {
+    skillsDiv.style.height = '72px';
+  }
+};
+
+const expandFrameworksDiv = () => {
+  if (frameworksCheckBox.checked) {
+    frameworksDiv.style.height = '200px';
+  } else {
+    frameworksDiv.style.height = '72px';
+  }
+};
+
+const expandHbsDiv = () => {
+  if (habsCheckBox.checked) {
+    habsDiv.style.height = '200px';
+  } else {
+    habsDiv.style.height = '72px';
+  }
+};
+
+langArrow.addEventListener('click', () => {
+  languagesCheckBox.checked = !languagesCheckBox.checked;
+  expandLanguagesDiv();
+});
+
+frameArrow.addEventListener('click', () => {
+  frameworksCheckBox.checked = !frameworksCheckBox.checked;
+  expandFrameworksDiv();
+});
+
+habArrow.addEventListener('click', () => {
+  habsCheckBox.checked = !habsCheckBox.checked;
+  expandHbsDiv();
+});
+
+languagesCheckBox.addEventListener('change', expandLanguagesDiv);
+
+frameworksCheckBox.addEventListener('change', expandFrameworksDiv);
+
+habsCheckBox.addEventListener('change', expandHbsDiv);
 
 window.onscroll = function () { controlScroll(); };
 
@@ -88,7 +142,7 @@ const projectCardsArray = [
     linkToLive: 'https://book-store-yh39.onrender.com/',
     linkToSource: 'https://github.com/enoqueJonas/book-store',
     canopy: 'Canopy',
-    type: 'Front-end',
+    type: 'Full-stack',
     year: '2022',
     id: 'card-4',
   },
@@ -461,15 +515,9 @@ function populateLocalStorage() {
     email: '',
     message: '',
   };
-  if (nameInput.value !== null) {
-    localStorageDataObject.name = nameInput.value;
-  }
-  if (emailInput.value !== null) {
-    localStorageDataObject.email = emailInput.value;
-  }
-  if (messageInput.value !== null) {
-    localStorageDataObject.message = messageInput.value;
-  }
+  localStorageDataObject.name = nameInput.value;
+  localStorageDataObject.email = emailInput.value;
+  localStorageDataObject.message = messageInput.value;
   if (storageAvailable('localStorage')) {
     localStorage.setItem('formData', JSON.stringify(localStorageDataObject));
   }

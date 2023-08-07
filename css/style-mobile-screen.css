@@ -26,6 +26,12 @@ a:hover {
   flex-direction: column;
 }
 
+.fa {
+  color: rgb(0 0 0 / 80%);
+  margin: 0;
+  padding: 0;
+}
+
 #header-background {
   display: flex;
   width: 100%;
@@ -172,6 +178,7 @@ a:hover {
   flex-direction: row;
   align-items: flex-start;
   padding: 8px;
+  padding-top: 0;
   width: 40px;
   height: 40px;
   border-radius: 8px;
@@ -216,6 +223,7 @@ a:hover {
   line-height: 24px;
   color: #7f8cff;
   margin: 15px 0 0;
+  padding-bottom: 15px;
 }
 
 #social {
@@ -225,11 +233,19 @@ a:hover {
   height: 20px;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 0;
+  padding: 0;
+  margin: 0 0 10px;
+}
+
+.social-links {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .language-list li {
-  width: 303px;
   background: #f7f7f9;
   border-radius: 8px;
   display: flex;
@@ -800,9 +816,8 @@ a:hover {
   flex-direction: column;
   align-items: flex-start;
   padding-bottom: 10px;
-  gap: 16px;
   width: 200px;
-  height: 80px;
+  height: 60px;
   flex: none;
   order: 2;
   flex-grow: 0;
@@ -815,7 +830,7 @@ a:hover {
   padding: 0;
   gap: 8px;
   width: 150px;
-  height: 24px;
+  height: 15px;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -876,16 +891,29 @@ a:hover {
   flex-grow: 0;
 }
 
+.collapsible {
+  margin: 15px;
+}
+
+.collapsible label {
+  font-weight: 500;
+  font-size: 20px;
+  color: #000;
+  display: flex;
+  align-items: center;
+  height: 24px;
+  left: 12px;
+}
+
 #skills {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0;
+  flex-direction: row;
   width: 327px;
-  height: 320px;
+  height: 72px;
   flex: none;
   order: 1;
   flex-grow: 0;
+  border-bottom: 1px solid rgb(0 0 0 / 30%);
 }
 
 .languages-frame {
@@ -921,30 +949,33 @@ a:hover {
   color: #000;
 }
 
-.languages-frame-title h3 {
-  height: 24px;
-  left: 12px;
-  right: 78px;
-  top: calc(50% - 24px / 2);
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
-  color: #000;
+/* (A) HIDE CHECKBOX */
+.tog-check { display: none; }
+
+/* (B) HIDE CONTENT BY DEFAULT */
+.tog-content {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  transition: max-height 1s, opacity 1s, visibility 0.5s;
 }
 
-.languages-frame-dropdown {
-  order: 1;
+/* (C) SHOW CONTENT WHEN CHECKED */
+.tog-check:checked + .tog-content {
+  display: block;
+  max-height: 1000px; /* Adjust to an appropriate value */
+  opacity: 1;
+  visibility: visible;
+  transition: max-height 1s, opacity 1s, visibility 1s;
+}
+
+.dropdown-i {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 8px;
-  width: 40px;
-  height: 40px;
-  right: 26px;
-  top: calc(50% - 40px / 2);
-  border-radius: 8px;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+  order: 2;
 }
 
 .language-list {
@@ -967,29 +998,89 @@ a:hover {
 }
 
 .icon-language-javascript {
-  background-image: url("../img/javascript.jpg");
+  background-image: url("../img/js.png");
   background-repeat: no-repeat;
-  top: calc(50% - 48px / 2 - 0.36px);
+  background-size: 100%;
   border-radius: 8px;
   flex: 0.3;
 }
 
 .icon-language-html {
-  background-image: url("../img/html.jpg");
+  background-image: url("../img/html5.png");
   background-repeat: no-repeat;
-  left: 12px;
-  top: calc(50% - 48px / 2 - 0.36px);
+  background-size: 100%;
+  border-radius: 8px;
+  flex: 0.3;
+}
+
+.icon-language-ruby {
+  background-image: url("../img/rubi.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
   border-radius: 8px;
   flex: 0.3;
 }
 
 .icon-language-css {
-  background-image: url("../img/css.jpg");
+  background-image: url("../img/icons8-css3-480.png");
   background-repeat: no-repeat;
-  width: 48px;
-  height: 48px;
-  left: 12px;
-  top: calc(50% - 48px / 2 - 0.36px);
+  background-size: 100%;
+  border-radius: 8px;
+  flex: 0.3;
+}
+
+.icon-language-java {
+  background-image: url("../img/java.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 8px;
+  flex: 0.3;
+}
+
+.icon-language-csharp {
+  background-image: url("../img/icons8-c-sharp-logo-480.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 8px;
+  flex: 0.3;
+}
+
+.icon-language-ror {
+  background-image: url("../img/icons8-ruby-on-rails-512.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 8px;
+  flex: 0.3;
+}
+
+.icon-language-react {
+  background-image: url("../img/icons8-react-480.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 8px;
+  flex: 0.3;
+}
+
+.icon-language-redux {
+  background-image: url("../img/icons8-redux-480.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 8px;
+  flex: 0.3;
+}
+
+.icon-language-heroku {
+  background-image: url("../img/icons8-github-512.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 8px;
+  flex: 0.3;
+}
+
+.icon-language-github {
+  background-image: url("../img/icons8-heroku-480.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
   border-radius: 8px;
   flex: 0.3;
 }
@@ -1002,6 +1093,7 @@ a:hover {
   flex: none;
   order: 1;
   flex-grow: 0;
+  border-bottom: 1px solid rgb(0 0 0 / 30%);
 }
 
 .frameworks-frame-title {
@@ -1012,25 +1104,13 @@ a:hover {
   height: 72px;
 }
 
-.framework-frame-dropdown {
-  order: 1;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 8px;
-  width: 40px;
-  height: 40px;
-  right: 26px;
-  top: calc(50% - 40px / 2);
-  border-radius: 8px;
-}
-
 .habs {
   width: 327px;
   height: 72px;
   flex: none;
   order: 2;
   flex-grow: 0;
+  border-bottom: 1px solid rgb(0 0 0 / 30%);
 }
 
 .habs-frame-title {
@@ -1039,19 +1119,6 @@ a:hover {
   justify-content: space-between;
   width: 327px;
   height: 72px;
-}
-
-.habs-frame-dropdown {
-  order: 1;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 8px;
-  width: 40px;
-  height: 40px;
-  right: 26px;
-  top: calc(50% - 40px / 2);
-  border-radius: 8px;
 }
 
 #contact {

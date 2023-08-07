@@ -472,7 +472,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 684px;
-  height: 216px;
+  height: 72px;
 }
 
 .languages-frame-title {
@@ -481,11 +481,6 @@ body {
   flex: none;
   order: 0;
   flex-grow: 0;
-}
-
-.languages-frame-title h3 {
-  width: 582px;
-  padding: 0;
 }
 
 .frameworks {
@@ -500,7 +495,6 @@ body {
   flex-direction: row;
   justify-content: space-between;
   width: 684px;
-  border-bottom: 1px solid #dfe1e6;
 }
 
 .habs {
@@ -515,7 +509,6 @@ body {
   flex-direction: row;
   justify-content: space-between;
   width: 684px;
-  border-bottom: 1px solid #dfe1e6;
 }
 
 .language-list {
@@ -537,8 +530,8 @@ body {
 }
 
 .icon-language {
-  width: 48px;
-  height: 48px;
+  width: 122px;
+  height: 120px;
 }
 
 .contact-main p {
@@ -550,12 +543,6 @@ body {
   text-align: center;
   color: #ebebff;
   flex: none;
-  margin: 0;
-}
-
-.language-list li p {
-  width: 98px;
-  height: 24px;
   margin: 0;
 }
 
