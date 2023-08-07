@@ -1111,6 +1111,7 @@ a:hover {
   order: 2;
   flex-grow: 0;
   border-bottom: 1px solid rgb(0 0 0 / 30%);
+  z-index: 100;
 }
 
 .habs-frame-title {
