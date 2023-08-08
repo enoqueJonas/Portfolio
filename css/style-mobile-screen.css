@@ -897,6 +897,7 @@ a:hover {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
+  border-bottom: 1px solid rgb(0 0 0 / 30%);
 }
 
 .collapsible label {
@@ -1068,7 +1069,6 @@ a:hover {
   flex: none;
   order: 1;
   flex-grow: 0;
-  border-bottom: 1px solid rgb(0 0 0 / 30%);
 }
 
 .frameworks-frame-title {
@@ -1085,7 +1085,6 @@ a:hover {
   flex: none;
   order: 2;
   flex-grow: 0;
-  border-bottom: 1px solid rgb(0 0 0 / 30%);
   z-index: 100;
 }
 
