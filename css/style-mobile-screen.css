@@ -990,18 +990,15 @@ a:hover {
 }
 
 .icon-language {
+  color: #000;  
   width: 48px;
   height: 48px;
-}
-
-.icon-language{
-  color: #000;  
+  background-size: contain;
 }
 
 .icon-language-javascript {
   background-image: url("../img/js.png");
   background-repeat: no-repeat;
-  background-size: 100%;
   border-radius: 8px;
   flex: 0.3;
 }
@@ -1009,7 +1006,6 @@ a:hover {
 .icon-language-html {
   background-image: url("../img/html5.png");
   background-repeat: no-repeat;
-  background-size: 100%;
   border-radius: 8px;
   flex: 0.3;
 }
@@ -1017,7 +1013,6 @@ a:hover {
 .icon-language-ruby {
   background-image: url("../img/rubi.png");
   background-repeat: no-repeat;
-  background-size: 100%;
   border-radius: 8px;
   flex: 0.3;
 }
@@ -1025,7 +1020,6 @@ a:hover {
 .icon-language-css {
   background-image: url("../img/icons8-css3-480.png");
   background-repeat: no-repeat;
-  background-size: 100%;
   border-radius: 8px;
   flex: 0.3;
 }
@@ -1033,7 +1027,6 @@ a:hover {
 .icon-language-java {
   background-image: url("../img/java.png");
   background-repeat: no-repeat;
-  background-size: 100%;
   border-radius: 8px;
   flex: 0.3;
 }
@@ -1041,7 +1034,6 @@ a:hover {
 .icon-language-csharp {
   background-image: url("../img/icons8-c-sharp-logo-480.png");
   background-repeat: no-repeat;
-  background-size: 100%;
   border-radius: 8px;
   flex: 0.3;
 }
@@ -1049,7 +1041,6 @@ a:hover {
 .icon-language-ror {
   background-image: url("../img/icons8-ruby-on-rails-512.png");
   background-repeat: no-repeat;
-  background-size: 100%;
   border-radius: 8px;
   flex: 0.3;
 }
@@ -1057,7 +1048,6 @@ a:hover {
 .icon-language-react {
   background-image: url("../img/icons8-react-480.png");
   background-repeat: no-repeat;
-  background-size: 100%;
   border-radius: 8px;
   flex: 0.3;
 }
@@ -1065,7 +1055,6 @@ a:hover {
 .icon-language-redux {
   background-image: url("../img/icons8-redux-480.png");
   background-repeat: no-repeat;
-  background-size: 100%;
   border-radius: 8px;
   flex: 0.3;
 }
@@ -1073,7 +1062,6 @@ a:hover {
 .icon-language-heroku {
   background-image: url("../img/icons8-github-512.png");
   background-repeat: no-repeat;
-  background-size: 100%;
   border-radius: 8px;
   flex: 0.3;
 }
@@ -1081,7 +1069,6 @@ a:hover {
 .icon-language-github {
   background-image: url("../img/icons8-heroku-480.png");
   background-repeat: no-repeat;
-  background-size: 100%;
   border-radius: 8px;
   flex: 0.3;
 }
