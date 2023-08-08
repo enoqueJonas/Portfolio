@@ -534,6 +534,10 @@ body {
   height: 120px;
 }
 
+.icon-language-text {
+  display: none;
+}
+
 .contact-main p {
   width: 569px;
   height: 102px;

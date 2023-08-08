@@ -893,6 +893,10 @@ a:hover {
 
 .collapsible {
   margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .collapsible label {
@@ -903,17 +907,6 @@ a:hover {
   align-items: center;
   height: 24px;
   left: 12px;
-}
-
-#skills {
-  display: flex;
-  flex-direction: row;
-  width: 327px;
-  height: 72px;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  border-bottom: 1px solid rgb(0 0 0 / 30%);
 }
 
 .languages-frame {
@@ -992,9 +985,17 @@ a:hover {
   flex-grow: 0;
 }
 
+.language-list-item {
+ width: 18em;
+}
+
 .icon-language {
   width: 48px;
   height: 48px;
+}
+
+.icon-language{
+  color: #000;  
 }
 
 .icon-language-javascript {
@@ -1086,8 +1087,6 @@ a:hover {
 }
 
 .frameworks {
-  display: flex;
-  flex-direction: row;
   width: 327px;
   height: 72px;
   flex: none;
