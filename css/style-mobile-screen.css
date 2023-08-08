@@ -930,7 +930,6 @@ a:hover {
   height: 72px;
 }
 
-
 /* (A) HIDE CHECKBOX */
 .tog-check { display: none; }
 
@@ -965,7 +964,6 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 12px;
   gap: 12px;
   width: 327px;
   height: 248.15px;
@@ -976,11 +974,11 @@ a:hover {
 }
 
 .language-list-item {
- width: 18em;
+  width: 18em;
 }
 
 .icon-language {
-  color: #000;  
+  color: #000;
   width: 48px;
   height: 48px;
   background-size: contain;
