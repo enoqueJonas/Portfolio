@@ -60,7 +60,7 @@ const expandLanguagesDiv = () => {
 
 const expandFrameworksDiv = () => {
   if (frameworksCheckBox.checked) {
-    frameworksDiv.style.height = 'auto';
+    frameworksDiv.style.height = '240px';
   } else {
     frameworksDiv.style.height = '72px';
   }
@@ -68,7 +68,7 @@ const expandFrameworksDiv = () => {
 
 const expandHbsDiv = () => {
   if (habsCheckBox.checked) {
-    habsDiv.style.height = 'auto';
+    habsDiv.style.height = '220px';
   } else {
     habsDiv.style.height = '72px';
   }

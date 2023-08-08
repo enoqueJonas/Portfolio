@@ -929,18 +929,6 @@ a:hover {
   height: 72px;
 }
 
-.framework-frame-title h3 {
-  height: 24px;
-  left: 12px;
-  right: 78px;
-  top: calc(50% - 24px / 2);
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
-  color: #000;
-}
 
 /* (A) HIDE CHECKBOX */
 .tog-check { display: none; }
@@ -983,6 +971,7 @@ a:hover {
   flex: none;
   order: 1;
   flex-grow: 0;
+  padding: 0;
 }
 
 .language-list-item {
