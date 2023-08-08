@@ -52,7 +52,7 @@ function typeWriterEffect(i, text, element) {
 
 const expandLanguagesDiv = () => {
   if (languagesCheckBox.checked) {
-    skillsDiv.style.height = '200px';
+    skillsDiv.style.height = 'auto';
   } else {
     skillsDiv.style.height = '72px';
   }
@@ -60,7 +60,7 @@ const expandLanguagesDiv = () => {
 
 const expandFrameworksDiv = () => {
   if (frameworksCheckBox.checked) {
-    frameworksDiv.style.height = '200px';
+    frameworksDiv.style.height = 'auto';
   } else {
     frameworksDiv.style.height = '72px';
   }
@@ -68,7 +68,7 @@ const expandFrameworksDiv = () => {
 
 const expandHbsDiv = () => {
   if (habsCheckBox.checked) {
-    habsDiv.style.height = '200px';
+    habsDiv.style.height = 'auto';
   } else {
     habsDiv.style.height = '72px';
   }
