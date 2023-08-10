@@ -891,6 +891,7 @@ a:hover {
   flex-grow: 0;
 }
 
+/* Adds styling to the 3 collapsibles in the page*/
 .collapsible {
   margin: 15px;
   display: flex;
