@@ -52,7 +52,7 @@ function typeWriterEffect(i, text, element) {
 
 const expandLanguagesDiv = () => {
   if (languagesCheckBox.checked) {
-    skillsDiv.style.height = '200px';
+    skillsDiv.style.height = 'auto';
   } else {
     skillsDiv.style.height = '72px';
   }
@@ -60,7 +60,7 @@ const expandLanguagesDiv = () => {
 
 const expandFrameworksDiv = () => {
   if (frameworksCheckBox.checked) {
-    frameworksDiv.style.height = '200px';
+    frameworksDiv.style.height = '240px';
   } else {
     frameworksDiv.style.height = '72px';
   }
@@ -68,23 +68,38 @@ const expandFrameworksDiv = () => {
 
 const expandHbsDiv = () => {
   if (habsCheckBox.checked) {
-    habsDiv.style.height = '200px';
+    habsDiv.style.height = '220px';
   } else {
     habsDiv.style.height = '72px';
   }
 };
 
 langArrow.addEventListener('click', () => {
+  if(languagesCheckBox.checked){
+    langArrow.style = 'display: flex; justify-content: flex-end; padding: 0; margin: 0; order: 2; width: 48px; height: 48px; transform: rotate(360deg);'
+  }else{
+    langArrow.style = 'width: 48px; height: 48px; transform: rotate(90deg);'
+  }
   languagesCheckBox.checked = !languagesCheckBox.checked;
   expandLanguagesDiv();
 });
 
 frameArrow.addEventListener('click', () => {
+  if(frameworksCheckBox.checked){
+    frameArrow.style = 'display: flex; justify-content: flex-end; padding: 0; margin: 0; order: 2; width: 48px; height: 48px; transform: rotate(360deg);'
+  }else{
+    frameArrow.style = 'width: 48px; height: 48px; transform: rotate(90deg);'
+  }
   frameworksCheckBox.checked = !frameworksCheckBox.checked;
   expandFrameworksDiv();
 });
 
 habArrow.addEventListener('click', () => {
+  if(habsCheckBox.checked){
+    habArrow.style = 'display: flex; justify-content: flex-end; padding: 0; margin: 0; order: 2; width: 48px; height: 48px; transform: rotate(360deg);'
+  }else{
+    habArrow.style = 'width: 48px; height: 48px; transform: rotate(90deg);'
+  }
   habsCheckBox.checked = !habsCheckBox.checked;
   expandHbsDiv();
 });
